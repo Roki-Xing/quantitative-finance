@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "experiment_name": "Cross-Market Expansion Simulation",
+    "date": "2025-11-29T16:29:42.675260",
+    "method": "Theoretical extrapolation from US+China empirical results",
+    "markets_simulated": 4,
+    "simulations_per_market": 10
+  },
+  "empirical_baseline": {
+    "US": {
+      "market_type": "Mature Developed",
+      "volatility": 1.18,
+      "price_range_factor": 1.92,
+      "fixed_param_return": 14.05,
+      "adaptive_return": 31.32,
+      "improvement": 17.27,
+      "sharpe_fixed": 0.82,
+      "sharpe_adaptive": 1.53
+    },
+    "China": {
+      "market_type": "Emerging",
+      "volatility": 2.73,
+      "price_range_factor": 694.0,
+      "fixed_param_return": -52.76,
+      "adaptive_return": 17.82,
+      "improvement": 70.58,
+      "sharpe_fixed": -1.02,
+      "sharpe_adaptive": 0.5
+    }
+  },
+  "simulated_markets": {
+    "DAX (Germany)": {
+      "characteristics": {
+        "market_type": "Mature European",
+        "volatility": 1.65,
+        "price_range_factor": 3.5,
+        "similar_to": "US",
+        "complexity_score": 0.35
+      },
+      "fixed_param_mean": -11.159617510127227,
+      "fixed_param_std": 3.1680550237037135,
+      "adaptive_mean": 19.470704123014094,
+      "adaptive_std": 1.9302550532752574,
+      "improvement_pp": 30.63032163314132,
+      "t_statistic": 24.769932386283163,
+      "p_value": 2.331871494307349e-15,
+      "significant": true
+    },
+    "FTSE 100 (UK)": {
+      "characteristics": {
+        "market_type": "Mature European",
+        "volatility": 1.52,
+        "price_range_factor": 2.8,
+        "similar_to": "US",
+        "complexity_score": 0.3
+      },
+      "fixed_param_mean": -4.877258857917447,
+      "fixed_param_std": 2.8650028802748455,
+      "adaptive_mean": 19.123043247081533,
+      "adaptive_std": 2.089043463961341,
+      "improvement_pp": 24.00030210499898,
+      "t_statistic": 20.306254910530377,
+      "p_value": 7.40833490776472e-14,
+      "significant": true
+    },
+    "Hang Seng (HK)": {
+      "characteristics": {
+        "market_type": "Developed Asia-Pacific",
+        "volatility": 2.15,
+        "price_range_factor": 4.2,
+        "similar_to": "China",
+        "complexity_score": 0.55
+      },
+      "fixed_param_mean": -25.64932024490239,
+      "fixed_param_std": 2.584040381567471,
+      "adaptive_mean": 18.9807264152572,
+      "adaptive_std": 1.7080776588575939,
+      "improvement_pp": 44.63004666015959,
+      "t_statistic": 43.224578657531936,
+      "p_value": 1.2217172161332682e-19,
+      "significant": true
+    },
+    "Nikkei 225 (Japan)": {
+      "characteristics": {
+        "market_type": "Developed Asia-Pacific",
+        "volatility": 1.88,
+        "price_range_factor": 2.5,
+        "similar_to": "US",
+        "complexity_score": 0.42
+      },
+      "fixed_param_mean": -10.15650803719497,
+      "fixed_param_std": 3.243003373671285,
+      "adaptive_mean": 20.011680833586126,
+      "adaptive_std": 2.355304395044709,
+      "improvement_pp": 30.168188870781094,
+      "t_statistic": 22.580652405155288,
+      "p_value": 1.1739165981211874e-14,
+      "significant": true
+    }
+  },
+  "summary_statistics": {
+    "mean_improvement": 32.35721481727025,
+    "std_improvement": 7.553714089574636,
+    "min_improvement": 24.00030210499898,
+    "max_improvement": 44.63004666015959,
+    "significant_markets": 4,
+    "total_markets": 4,
+    "all_positive": true
+  }
+}

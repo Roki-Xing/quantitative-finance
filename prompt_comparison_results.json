@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "experiment_name": "Prompt Engineering Tone Comparison",
+    "date": "2025-11-29T16:04:29.299439",
+    "n_strategies_per_group": 10,
+    "seed": 42
+  },
+  "group_statistics": {
+    "harsh_prompt": {
+      "mean_return": 5.216275002644403,
+      "std_return": 3.0865766863252273,
+      "median_return": 5.5383669423436945,
+      "mean_sharpe": 0.4032696178961552,
+      "std_sharpe": 0.25079739077078095,
+      "mean_max_drawdown": -13.653586536281162,
+      "win_rate_pct": 100.0,
+      "individual_returns": [
+        5.435213688550547,
+        2.577810644729669,
+        6.114598421453117,
+        10.053634353836113,
+        2.1463098137449883,
+        2.146383693728688,
+        10.306457669783262,
+        6.65345628118809,
+        1.0873652632927158,
+        5.641520196136842
+      ]
+    },
+    "polite_prompt": {
+      "mean_return": 4.231701334867792,
+      "std_return": 3.0421019189323637,
+      "median_return": 4.238714628245736,
+      "mean_sharpe": 0.9567944568477642,
+      "std_sharpe": 0.21359760628694713,
+      "mean_max_drawdown": -7.681731573640941,
+      "win_rate_pct": 90.0,
+      "individual_returns": [
+        3.415221485757688,
+        10.286378916625026,
+        5.062207770733784,
+        2.138409398923479,
+        7.403125753888929,
+        1.6816377800811377,
+        5.684818066013315,
+        -0.38707634686337133,
+        1.3810790630843943,
+        5.6512114604335455
+      ]
+    }
+  },
+  "statistical_tests": {
+    "returns": {
+      "t_statistic": -0.6815632841988756,
+      "p_value": 0.5041907400294585,
+      "significant": false,
+      "cohens_d": -0.30480436688733886,
+      "effect_interpretation": "small"
+    },
+    "sharpe_ratio": {
+      "t_statistic": 5.040770627994561,
+      "p_value": 8.500725458112668e-05,
+      "significant": true,
+      "cohens_d": 2.254301156636029
+    },
+    "max_drawdown": {
+      "t_statistic": 3.964079104447934,
+      "p_value": 0.0009097887850676035,
+      "significant": true
+    },
+    "wilcoxon_returns": {
+      "w_statistic": -0.7559289460184545,
+      "p_value": 0.4496917979688909,
+      "significant": false
+    }
+  },
+  "conclusion": {
+    "polite_superior": false,
+    "improvement_pp": -0.984573667776611,
+    "sharpe_improvement": 0.553524838951609,
+    "statistical_significance": false,
+    "practical_significance": false
+  }
+}
