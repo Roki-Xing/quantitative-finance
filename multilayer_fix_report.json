@@ -1,0 +1,256 @@
+{
+  "date": "2025-11-24T09:37:59.582834",
+  "target_dir": "experiment4_trading_extended/multilayer",
+  "backup_dir": "experiment4_trading_extended/multilayer_backup",
+  "total_files": 30,
+  "success": 0,
+  "partial": 21,
+  "no_change": 9,
+  "total_fixes": 24,
+  "fix_types": {
+    "Line 44": 2,
+    "Line 47": 1,
+    "Line 60": 1,
+    "Line 41": 2,
+    "Line 38": 2,
+    "Line 42": 2,
+    "Line 24": 1,
+    "Line 30": 2,
+    "Line 32": 2,
+    "Line 49": 1,
+    "Line 61": 2,
+    "Line 31": 1,
+    "Line 29": 1,
+    "Line 33": 1,
+    "Line 45": 1,
+    "Line 56": 1,
+    "Line 36": 1
+  },
+  "details": [
+    {
+      "file": "strategy_001.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_002.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 44 (strategy_002.py, line 46))",
+      "fixes": [
+        "Line 44: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_003.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 47 (strategy_003.py, line 49))",
+      "fixes": [
+        "Line 47: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_004.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 60 (strategy_004.py, line 61))",
+      "fixes": [
+        "Line 60: Fixed elif indentation (16 -> 20)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_005.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 41 (strategy_005.py, line 43))",
+      "fixes": [
+        "Line 41: Fixed else: indentation (12 -> 16)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_006.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_007.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 38 (strategy_007.py, line 40))",
+      "fixes": [
+        "Line 38: Fixed elif indentation (12 -> 16)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_008.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 42 (strategy_008.py, line 44))",
+      "fixes": [
+        "Line 42: Fixed elif indentation (12 -> 16)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_009.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 38 (strategy_009.py, line 39))",
+      "fixes": [
+        "Line 38: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_010.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 24 (strategy_010.py, line 26))",
+      "fixes": [
+        "Line 24: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_011.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 30 (strategy_011.py, line 31))",
+      "fixes": [
+        "Line 30: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_012.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_013.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_014.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: invalid syntax (strategy_014.py, line 32))",
+      "fixes": [
+        "Line 32: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_015.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_016.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 32 (strategy_016.py, line 34))",
+      "fixes": [
+        "Line 32: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_017.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_018.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 49 (strategy_018.py, line 51))",
+      "fixes": [
+        "Line 49: Fixed else: indentation (8 -> 12)",
+        "Line 61: Fixed else: indentation (12 -> 16)"
+      ],
+      "fix_count": 2
+    },
+    {
+      "file": "strategy_019.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 30 (strategy_019.py, line 31))",
+      "fixes": [
+        "Line 30: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_020.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 31 (strategy_020.py, line 33))",
+      "fixes": [
+        "Line 31: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_021.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 29 (strategy_021.py, line 30))",
+      "fixes": [
+        "Line 29: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_022.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 42 (strategy_022.py, line 43))",
+      "fixes": [
+        "Line 42: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_023.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_024.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_025.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 33 (strategy_025.py, line 34))",
+      "fixes": [
+        "Line 33: Fixed elif indentation (12 -> 16)",
+        "Line 45: Fixed elif indentation (12 -> 16)",
+        "Line 56: Fixed elif indentation (12 -> 16)"
+      ],
+      "fix_count": 3
+    },
+    {
+      "file": "strategy_026.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'else' statement on line 36 (strategy_026.py, line 38))",
+      "fixes": [
+        "Line 36: Fixed else: indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_027.py",
+      "status": "\u23ed\ufe0f  NO CHANGES",
+      "fixes": [],
+      "fix_count": 0
+    },
+    {
+      "file": "strategy_028.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 61 (strategy_028.py, line 62))",
+      "fixes": [
+        "Line 61: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_029.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 41 (strategy_029.py, line 42))",
+      "fixes": [
+        "Line 41: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    },
+    {
+      "file": "strategy_030.py",
+      "status": "\u26a0\ufe0f  PARTIAL (SyntaxError: expected an indented block after 'elif' statement on line 44 (strategy_030.py, line 45))",
+      "fixes": [
+        "Line 44: Fixed elif indentation (8 -> 12)"
+      ],
+      "fix_count": 1
+    }
+  ]
+}

@@ -1,0 +1,1226 @@
+{
+  "baseline": [
+    {
+      "id": 1,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute 'addfeed'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1950
+    },
+    {
+      "id": 2,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "name 'datetime' is not defined",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1533
+    },
+    {
+      "id": 3,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'columns'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1535
+    },
+    {
+      "id": 4,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "module 'backtrader.indicators' has no attribute 'HighestHigh'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1547
+    },
+    {
+      "id": 5,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "[Errno 2] No such file or directory: 'data.csv'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1813
+    },
+    {
+      "id": 6,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": -0.6982494862780732,
+        "sharpe": -6.1666435244635345,
+        "max_drawdown": 0.7032453124398744,
+        "trades": 384
+      },
+      "code_length": 2240
+    },
+    {
+      "id": 7,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'BackBroker' object has no attribute 'set_stoploss'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1813
+    },
+    {
+      "id": 8,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": -0.577531167016059,
+        "sharpe": -14.836954043932574,
+        "max_drawdown": 0.6700729492102154,
+        "trades": 235
+      },
+      "code_length": 1353
+    },
+    {
+      "id": 9,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "MACD.__init__() got an unexpected keyword argument 'fast'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1384
+    },
+    {
+      "id": 10,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'AutoInfoClass_LineRoot_LineMultiple_LineSeries_Lin' object has no attribute 'atr'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1503
+    },
+    {
+      "id": 11,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "list index out of range",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1657
+    },
+    {
+      "id": 12,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Lines_LineSeries_LineIterator_DataAccessor_Indicat' object has no attribute 'boll'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2360
+    },
+    {
+      "id": 13,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1551
+    },
+    {
+      "id": 14,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 0.004193115310627036,
+        "sharpe": -1569.7492471498588,
+        "max_drawdown": 0.0029877624205871542,
+        "trades": 29
+      },
+      "code_length": 1743
+    },
+    {
+      "id": 15,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "module 'backtrader.feeds' has no attribute 'YahooFinanceCSVDataFeed'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1501
+    },
+    {
+      "id": 16,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 0.0036178907649446045,
+        "sharpe": -1982.0743126715415,
+        "max_drawdown": 0.0018014227201514433,
+        "trades": 41
+      },
+      "code_length": 2396
+    },
+    {
+      "id": 17,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Lines_LineSeries_LineIterator_DataAccessor_Strateg' object has no attribute 'log'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1652
+    },
+    {
+      "id": 18,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 0.0,
+        "sharpe": null,
+        "max_drawdown": 0.0,
+        "trades": 0
+      },
+      "code_length": 2375
+    },
+    {
+      "id": 19,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'BackBroker' object has no attribute 'position'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1762
+    },
+    {
+      "id": 20,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "BollingerBands.__init__() got an unexpected keyword argument 'dev'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2475
+    },
+    {
+      "id": 21,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "MACD.__init__() got an unexpected keyword argument 'fast'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1849
+    },
+    {
+      "id": 22,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'BackBroker' object has no attribute 'set_stoploss'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1629
+    },
+    {
+      "id": 23,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": false,
+        "has_class": false,
+        "has_init": false,
+        "has_next": false,
+        "errors": [
+          "SyntaxError: invalid syntax. Perhaps you forgot a comma? (<string>, line 53)"
+        ]
+      },
+      "backtest": {
+        "success": false
+      },
+      "code_length": 2546
+    },
+    {
+      "id": 24,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1534
+    },
+    {
+      "id": 25,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "property 'position' of 'TrendFollowingStrategy' object has no setter",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1141
+    },
+    {
+      "id": 26,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Lines_LineSeries_LineIterator_DataAccessor_Strateg' object has no attribute 'log'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1709
+    },
+    {
+      "id": 27,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "MACD.__init__() got an unexpected keyword argument 'fast'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 1274
+    },
+    {
+      "id": 28,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'columns'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2042
+    },
+    {
+      "id": 29,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 0.0,
+        "sharpe": null,
+        "max_drawdown": 0.0,
+        "trades": 0
+      },
+      "code_length": 1167
+    },
+    {
+      "id": 30,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 0.0,
+        "sharpe": null,
+        "max_drawdown": 0.0,
+        "trades": 0
+      },
+      "code_length": 2191
+    }
+  ],
+  "multilayer": [
+    {
+      "id": 1,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'columns'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2975
+    },
+    {
+      "id": 2,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "module 'backtrader.indicators' has no attribute 'MovAvgType'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2578
+    },
+    {
+      "id": 3,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'columns'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3278
+    },
+    {
+      "id": 4,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'toordinal'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 5969
+    },
+    {
+      "id": 5,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'toordinal'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 4142
+    },
+    {
+      "id": 6,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "name 'self' is not defined",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2463
+    },
+    {
+      "id": 7,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": 14.874857012534399,
+        "sharpe": 0.004306805437517761,
+        "max_drawdown": 16.1652981535197,
+        "trades": 1
+      },
+      "code_length": 3329
+    },
+    {
+      "id": 8,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Lines_LineSeries_LineIterator_DataAccessor_Indicat' object has no attribute 'mean'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3689
+    },
+    {
+      "id": 9,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": -107996.77209534243,
+        "sharpe": -0.10352074045170324,
+        "max_drawdown": 5555.508700954365,
+        "trades": 2
+      },
+      "code_length": 2995
+    },
+    {
+      "id": 10,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2912
+    },
+    {
+      "id": 11,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2398
+    },
+    {
+      "id": 12,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": false,
+        "has_class": false,
+        "has_init": false,
+        "has_next": false,
+        "errors": [
+          "SyntaxError: '(' was never closed (<string>, line 77)"
+        ]
+      },
+      "backtest": {
+        "success": false
+      },
+      "code_length": 3314
+    },
+    {
+      "id": 13,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": -0.0017654698572441702,
+        "sharpe": -3255.5465818689136,
+        "max_drawdown": 0.0029011940437112327,
+        "trades": 482
+      },
+      "code_length": 2683
+    },
+    {
+      "id": 14,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'str' object has no attribute 'columns'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2522
+    },
+    {
+      "id": 15,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "MACD.__init__() got an unexpected keyword argument 'fast'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2570
+    },
+    {
+      "id": 16,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2730
+    },
+    {
+      "id": 17,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "unsupported operand type(s) for +: 'int' and 'str'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3734
+    },
+    {
+      "id": 18,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "BollingerBands.__init__() got an unexpected keyword argument 'nbdevdown'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 4659
+    },
+    {
+      "id": 19,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": true,
+        "error": null,
+        "return_pct": -0.027462220066023293,
+        "sharpe": -93.72479396532309,
+        "max_drawdown": 0.057297898027241875,
+        "trades": 178
+      },
+      "code_length": 2093
+    },
+    {
+      "id": 20,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "[Errno 2] No such file or directory: 'data.csv'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2951
+    },
+    {
+      "id": 21,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "[Errno 2] No such file or directory: 'data.csv'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2617
+    },
+    {
+      "id": 22,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2946
+    },
+    {
+      "id": 23,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'module' object is not callable",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3224
+    },
+    {
+      "id": 24,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "[Errno 2] No such file or directory: 'data.csv'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3512
+    },
+    {
+      "id": 25,
+      "strategy_type": "Trend Following Strategy using Moving Averages",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Lines_LineSeries_LineIterator_DataAccessor_Strateg' object has no attribute 'cover'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3882
+    },
+    {
+      "id": 26,
+      "strategy_type": "Mean Reversion Strategy using Bollinger Bands",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "'Cerebro' object has no attribute '_exactbars'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3242
+    },
+    {
+      "id": 27,
+      "strategy_type": "Momentum Strategy using RSI and MACD",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "MACD.__init__() got an unexpected keyword argument 'fast'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 2314
+    },
+    {
+      "id": 28,
+      "strategy_type": "Volatility Breakout Strategy using ATR",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "list index out of range",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3807
+    },
+    {
+      "id": 29,
+      "strategy_type": "Price-Volume Strategy",
+      "validation": {
+        "syntax_valid": true,
+        "has_class": true,
+        "has_init": true,
+        "has_next": true,
+        "errors": []
+      },
+      "backtest": {
+        "success": false,
+        "error": "[Errno 2] No such file or directory: 'a_share_data.csv'",
+        "return_pct": 0,
+        "sharpe": null,
+        "max_drawdown": 0,
+        "trades": 0
+      },
+      "code_length": 3375
+    },
+    {
+      "id": 30,
+      "strategy_type": "Multi-Factor Comprehensive Strategy",
+      "validation": {
+        "syntax_valid": false,
+        "has_class": false,
+        "has_init": false,
+        "has_next": false,
+        "errors": [
+          "SyntaxError: '(' was never closed (<string>, line 78)"
+        ]
+      },
+      "backtest": {
+        "success": false
+      },
+      "code_length": 3348
+    }
+  ],
+  "meta": {
+    "start_time": "2025-11-22T23:28:52.924129",
+    "num_samples": 30,
+    "model": "/root/autodl-tmp/models/Meta-Llama-3.1-8B-Instruct",
+    "data_files": [
+      "stock_sh_600028.csv",
+      "stock_sh_600036.csv",
+      "stock_sh_600048.csv",
+      "stock_sh_600276.csv",
+      "stock_sh_600519.csv"
+    ],
+    "end_time": "2025-11-22T23:42:39.618928"
+  },
+  "summary": {
+    "baseline": {
+      "total": 30,
+      "syntax_valid": 29,
+      "runnable": 7,
+      "avg_return": -0.18113852103122294,
+      "avg_code_length": 1774.1666666666667
+    },
+    "multilayer": {
+      "total": 30,
+      "syntax_valid": 28,
+      "runnable": 4,
+      "avg_return": -26995.481616504956,
+      "avg_code_length": 3208.366666666667
+    }
+  }
+}

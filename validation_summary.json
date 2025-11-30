@@ -1,0 +1,1301 @@
+{
+  "experiment": "Experiment 9: Multi-Market Validation",
+  "date": "2025-11-25T19:50:22.924519",
+  "total_stocks": 18,
+  "total_strategies": 4,
+  "comparison": [
+    {
+      "strategy": "innovation_triple_fusion",
+      "avg_return": 35.652923264679096,
+      "avg_sharpe": -0.47539034688590354,
+      "success_rate": 55.55555555555556,
+      "positive_stocks": 10,
+      "total_stocks": 18
+    },
+    {
+      "strategy": "strategy_007",
+      "avg_return": 4.983075065332608,
+      "avg_sharpe": -3.5057757943821866,
+      "success_rate": 100.0,
+      "positive_stocks": 18,
+      "total_stocks": 18
+    },
+    {
+      "strategy": "strategy_016",
+      "avg_return": 0.09101398521563453,
+      "avg_sharpe": -1266.3035128636861,
+      "success_rate": 50.0,
+      "positive_stocks": 9,
+      "total_stocks": 18
+    },
+    {
+      "strategy": "strategy_022",
+      "avg_return": 0.04224501731084698,
+      "avg_sharpe": -1368.7122369078947,
+      "success_rate": 77.77777777777779,
+      "positive_stocks": 14,
+      "total_stocks": 18
+    }
+  ],
+  "all_results": {
+    "innovation_triple_fusion": {
+      "strategy": "innovation_triple_fusion",
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      },
+      "total_stocks": 18,
+      "successful": 18,
+      "failed": 0,
+      "results": [
+        {
+          "success": true,
+          "stock": "stock_sh_600028",
+          "return_pct": -20.422831127766884,
+          "sharpe": -1.3915643667173054,
+          "max_drawdown": 27.335354025229936,
+          "total_trades": 18,
+          "win_rate": 16.666666666666664,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600036",
+          "return_pct": -12.769692932393475,
+          "sharpe": -0.6593436108819646,
+          "max_drawdown": 17.50821203832809,
+          "total_trades": 10,
+          "win_rate": 20.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600048",
+          "return_pct": -18.036143948693745,
+          "sharpe": -0.36162604264409093,
+          "max_drawdown": 39.3331305439753,
+          "total_trades": 38,
+          "win_rate": 39.473684210526315,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600276",
+          "return_pct": 54.98160373580744,
+          "sharpe": 0.031986172067079065,
+          "max_drawdown": 24.145069682874617,
+          "total_trades": 42,
+          "win_rate": 47.61904761904761,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600519",
+          "return_pct": 210.7492406421615,
+          "sharpe": 0.343582405898052,
+          "max_drawdown": 26.770857770334374,
+          "total_trades": 39,
+          "win_rate": 53.84615384615385,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600887",
+          "return_pct": 47.397855776038455,
+          "sharpe": -0.028231936684347873,
+          "max_drawdown": 19.831075247649412,
+          "total_trades": 43,
+          "win_rate": 39.53488372093023,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601318",
+          "return_pct": 0.0,
+          "sharpe": null,
+          "max_drawdown": 0.0,
+          "total_trades": 0,
+          "win_rate": 0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601857",
+          "return_pct": -6.332748861659347,
+          "sharpe": -3.6185776677039874,
+          "max_drawdown": 16.42695405049678,
+          "total_trades": 3,
+          "win_rate": 0.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000001",
+          "return_pct": 0.0,
+          "sharpe": null,
+          "max_drawdown": 0.0,
+          "total_trades": 0,
+          "win_rate": 0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000002",
+          "return_pct": -26.79269773416016,
+          "sharpe": -0.31086063122693,
+          "max_drawdown": 51.95086947224282,
+          "total_trades": 38,
+          "win_rate": 26.31578947368421,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000063",
+          "return_pct": 71.16100562047384,
+          "sharpe": 0.08655271637656305,
+          "max_drawdown": 27.741994725920932,
+          "total_trades": 39,
+          "win_rate": 46.15384615384615,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000333",
+          "return_pct": 30.690697496112918,
+          "sharpe": -0.030631818794599155,
+          "max_drawdown": 23.067764694000022,
+          "total_trades": 43,
+          "win_rate": 40.476190476190474,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000538",
+          "return_pct": 8.968162831322479,
+          "sharpe": -0.6610058543779623,
+          "max_drawdown": 12.78524616480423,
+          "total_trades": 22,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000651",
+          "return_pct": 29.896493505023507,
+          "sharpe": -0.13457218898362203,
+          "max_drawdown": 14.136788207375197,
+          "total_trades": 14,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000725",
+          "return_pct": -18.12186084420528,
+          "sharpe": -1.316326938338582,
+          "max_drawdown": 25.720192047304565,
+          "total_trades": 9,
+          "win_rate": 22.22222222222222,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000858",
+          "return_pct": 149.30442338775606,
+          "sharpe": 0.2619672605662197,
+          "max_drawdown": 17.740054128860276,
+          "total_trades": 41,
+          "win_rate": 53.65853658536586,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_002415",
+          "return_pct": 43.56853586859614,
+          "sharpe": 0.01720787721757733,
+          "max_drawdown": 30.87679335993926,
+          "total_trades": 45,
+          "win_rate": 40.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_300059",
+          "return_pct": 97.51057534981018,
+          "sharpe": 0.1651990740534435,
+          "max_drawdown": 15.339215206250376,
+          "total_trades": 10,
+          "win_rate": 40.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        }
+      ],
+      "statistics": {
+        "avg_return": 35.652923264679096,
+        "avg_sharpe": -0.47539034688590354,
+        "positive_count": 10,
+        "negative_count": 8,
+        "success_rate": 55.55555555555556
+      }
+    },
+    "strategy_007": {
+      "strategy": "strategy_007",
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      },
+      "total_stocks": 18,
+      "successful": 18,
+      "failed": 0,
+      "results": [
+        {
+          "success": true,
+          "stock": "stock_sh_600028",
+          "return_pct": 3.0308267208014295,
+          "sharpe": -7.09147729579855,
+          "max_drawdown": 1.174360105505964,
+          "total_trades": 161,
+          "win_rate": 40.625,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600036",
+          "return_pct": 5.336840675669198,
+          "sharpe": -4.153660867910912,
+          "max_drawdown": 1.4972193047872986,
+          "total_trades": 159,
+          "win_rate": 43.67088607594937,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600048",
+          "return_pct": 1.0489878864591593,
+          "sharpe": -2.9608030845608164,
+          "max_drawdown": 3.9456143355147937,
+          "total_trades": 142,
+          "win_rate": 39.71631205673759,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600276",
+          "return_pct": 4.894702826506764,
+          "sharpe": -2.937771299373653,
+          "max_drawdown": 3.5466120281762774,
+          "total_trades": 186,
+          "win_rate": 43.01075268817204,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600519",
+          "return_pct": 10.273211968630394,
+          "sharpe": -2.707798963491949,
+          "max_drawdown": 1.9063947988413303,
+          "total_trades": 148,
+          "win_rate": 45.57823129251701,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600887",
+          "return_pct": 5.1076663372180775,
+          "sharpe": -3.2552403377697834,
+          "max_drawdown": 2.4034353471216834,
+          "total_trades": 156,
+          "win_rate": 38.064516129032256,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601318",
+          "return_pct": 5.193796949623458,
+          "sharpe": -2.6478693403750526,
+          "max_drawdown": 2.569218460013347,
+          "total_trades": 170,
+          "win_rate": 37.8698224852071,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601857",
+          "return_pct": 2.232852689202642,
+          "sharpe": -4.945643067124987,
+          "max_drawdown": 2.1302419862877366,
+          "total_trades": 143,
+          "win_rate": 37.32394366197183,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000001",
+          "return_pct": 1.935093622167071,
+          "sharpe": -3.923952563609135,
+          "max_drawdown": 2.2105435294387226,
+          "total_trades": 166,
+          "win_rate": 36.96969696969697,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000002",
+          "return_pct": 0.6709679179943778,
+          "sharpe": -3.2846297855587445,
+          "max_drawdown": 4.263704120436747,
+          "total_trades": 148,
+          "win_rate": 35.374149659863946,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000063",
+          "return_pct": 2.0442053755923695,
+          "sharpe": -3.493597408528911,
+          "max_drawdown": 3.4483660445622326,
+          "total_trades": 175,
+          "win_rate": 33.90804597701149,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000333",
+          "return_pct": 6.5062003293425805,
+          "sharpe": -2.7886771256820357,
+          "max_drawdown": 2.125153455874409,
+          "total_trades": 130,
+          "win_rate": 39.53488372093023,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000538",
+          "return_pct": 2.9160358666292447,
+          "sharpe": -5.8102668093763405,
+          "max_drawdown": 2.174063877793647,
+          "total_trades": 164,
+          "win_rate": 39.87730061349693,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000651",
+          "return_pct": 4.925727690268701,
+          "sharpe": -3.709538292788769,
+          "max_drawdown": 2.0875183257572947,
+          "total_trades": 157,
+          "win_rate": 41.40127388535032,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000725",
+          "return_pct": 3.3942506942351174,
+          "sharpe": -3.140537425663063,
+          "max_drawdown": 2.1935332398939025,
+          "total_trades": 178,
+          "win_rate": 42.69662921348314,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000858",
+          "return_pct": 6.920241362112371,
+          "sharpe": -2.1581050379940443,
+          "max_drawdown": 2.877046623761613,
+          "total_trades": 142,
+          "win_rate": 40.140845070422536,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_002415",
+          "return_pct": 9.561466531218073,
+          "sharpe": -2.8304566332228904,
+          "max_drawdown": 1.9777099986985063,
+          "total_trades": 137,
+          "win_rate": 38.970588235294116,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_300059",
+          "return_pct": 13.702275732315917,
+          "sharpe": -1.2639389600497237,
+          "max_drawdown": 6.829453315167704,
+          "total_trades": 161,
+          "win_rate": 39.75155279503105,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ],
+      "statistics": {
+        "avg_return": 4.983075065332608,
+        "avg_sharpe": -3.5057757943821866,
+        "positive_count": 18,
+        "negative_count": 0,
+        "success_rate": 100.0
+      }
+    },
+    "strategy_016": {
+      "strategy": "strategy_016",
+      "params": {
+        "maperiod": 28,
+        "stop_loss": 0.07,
+        "take_profit": 0.05
+      },
+      "total_stocks": 18,
+      "successful": 18,
+      "failed": 0,
+      "results": [
+        {
+          "success": true,
+          "stock": "stock_sh_600028",
+          "return_pct": 0.0016499464500229807,
+          "sharpe": -7230.258366417742,
+          "max_drawdown": 0.002351686939648895,
+          "total_trades": 108,
+          "win_rate": 63.55140186915887,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600036",
+          "return_pct": 0.019999609667400362,
+          "sharpe": -724.5107087986494,
+          "max_drawdown": 0.01289672597147109,
+          "total_trades": 128,
+          "win_rate": 62.99212598425197,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600048",
+          "return_pct": -0.0010879268222488462,
+          "sharpe": -1627.7145772530296,
+          "max_drawdown": 0.00849821298031753,
+          "total_trades": 179,
+          "win_rate": 55.61797752808989,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600276",
+          "return_pct": -0.009567067212439724,
+          "sharpe": -215.7127475120286,
+          "max_drawdown": 0.06508897517857555,
+          "total_trades": 158,
+          "win_rate": 63.69426751592356,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600519",
+          "return_pct": 1.6095251474834367,
+          "sharpe": -14.335030217898476,
+          "max_drawdown": 0.7796903017561624,
+          "total_trades": 155,
+          "win_rate": 66.23376623376623,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600887",
+          "return_pct": -0.008766856912465301,
+          "sharpe": -622.8750579913734,
+          "max_drawdown": 0.03238811936927222,
+          "total_trades": 154,
+          "win_rate": 57.14285714285714,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601318",
+          "return_pct": 0.02602954485092778,
+          "sharpe": -312.0943038640497,
+          "max_drawdown": 0.02702294104149981,
+          "total_trades": 146,
+          "win_rate": 60.689655172413794,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601857",
+          "return_pct": 0.004814228565403028,
+          "sharpe": -2335.790338972467,
+          "max_drawdown": 0.004247315587527112,
+          "total_trades": 98,
+          "win_rate": 61.224489795918366,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000001",
+          "return_pct": -0.00399298495320545,
+          "sharpe": -1322.5135384553587,
+          "max_drawdown": 0.011600934111278733,
+          "total_trades": 139,
+          "win_rate": 55.79710144927537,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000002",
+          "return_pct": 0.016512831812317018,
+          "sharpe": -735.3457281314655,
+          "max_drawdown": 0.013520089024650414,
+          "total_trades": 151,
+          "win_rate": 60.0,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000063",
+          "return_pct": -0.025980881537587267,
+          "sharpe": -462.5184857231722,
+          "max_drawdown": 0.04019966587302042,
+          "total_trades": 184,
+          "win_rate": 53.80434782608695,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000333",
+          "return_pct": 0.0013691611188696698,
+          "sharpe": -264.14952384516334,
+          "max_drawdown": 0.0506813581456155,
+          "total_trades": 125,
+          "win_rate": 60.0,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000538",
+          "return_pct": 0.029725266197798188,
+          "sharpe": -375.69296335819655,
+          "max_drawdown": 0.04399522141520025,
+          "total_trades": 131,
+          "win_rate": 63.84615384615384,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000651",
+          "return_pct": 0.01106113929177809,
+          "sharpe": -315.10515765420234,
+          "max_drawdown": 0.030011454489635183,
+          "total_trades": 154,
+          "win_rate": 60.78431372549019,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000725",
+          "return_pct": -0.0026045875540876297,
+          "sharpe": -4386.710831033456,
+          "max_drawdown": 0.005082408270877957,
+          "total_trades": 126,
+          "win_rate": 55.2,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000858",
+          "return_pct": -0.018196416567589038,
+          "sharpe": -112.50044430288482,
+          "max_drawdown": 0.1753062198299015,
+          "total_trades": 181,
+          "win_rate": 60.0,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_002415",
+          "return_pct": -0.0055687517846236,
+          "sharpe": -438.04033106989965,
+          "max_drawdown": 0.032745368638168376,
+          "total_trades": 174,
+          "win_rate": 58.620689655172406,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_300059",
+          "return_pct": -0.006669668212285615,
+          "sharpe": -1297.5950969453118,
+          "max_drawdown": 0.017823525751428447,
+          "total_trades": 202,
+          "win_rate": 53.960396039603964,
+          "params": {
+            "maperiod": 28,
+            "stop_loss": 0.07,
+            "take_profit": 0.05
+          }
+        }
+      ],
+      "statistics": {
+        "avg_return": 0.09101398521563453,
+        "avg_sharpe": -1266.3035128636861,
+        "positive_count": 9,
+        "negative_count": 9,
+        "success_rate": 50.0
+      }
+    },
+    "strategy_022": {
+      "strategy": "strategy_022",
+      "params": {
+        "fast_ma_period": 10,
+        "slow_ma_period": 35,
+        "atr_period": 28,
+        "atr_multiplier": 1.5,
+        "stop_loss": 0.07,
+        "take_profit": 0.12
+      },
+      "total_stocks": 18,
+      "successful": 18,
+      "failed": 0,
+      "results": [
+        {
+          "success": true,
+          "stock": "stock_sh_600028",
+          "return_pct": 0.0018280661632306871,
+          "sharpe": -4670.615190151793,
+          "max_drawdown": 0.0014046276515219279,
+          "total_trades": 26,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600036",
+          "return_pct": 0.017373629309411626,
+          "sharpe": -571.0207359449879,
+          "max_drawdown": 0.023706678380660578,
+          "total_trades": 43,
+          "win_rate": 47.61904761904761,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600048",
+          "return_pct": 0.004419304029477643,
+          "sharpe": -1771.2341522904198,
+          "max_drawdown": 0.006865060568274558,
+          "total_trades": 45,
+          "win_rate": 44.44444444444444,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600276",
+          "return_pct": 0.013668833191026351,
+          "sharpe": -616.393170196015,
+          "max_drawdown": 0.017998868818906437,
+          "total_trades": 43,
+          "win_rate": 44.18604651162791,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600519",
+          "return_pct": 0.5633128208783746,
+          "sharpe": -32.15511703393051,
+          "max_drawdown": 0.5024703534246402,
+          "total_trades": 43,
+          "win_rate": 52.38095238095239,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_600887",
+          "return_pct": 0.012091151838321821,
+          "sharpe": -1041.8785902393365,
+          "max_drawdown": 0.012766412063462483,
+          "total_trades": 43,
+          "win_rate": 47.61904761904761,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601318",
+          "return_pct": -0.0036168648664315697,
+          "sharpe": -412.88878705155133,
+          "max_drawdown": 0.03941774107195438,
+          "total_trades": 38,
+          "win_rate": 40.54054054054054,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sh_601857",
+          "return_pct": -0.00046745856244524475,
+          "sharpe": -3479.1151242191413,
+          "max_drawdown": 0.004179547519542218,
+          "total_trades": 22,
+          "win_rate": 36.36363636363637,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000001",
+          "return_pct": -0.002344385899574263,
+          "sharpe": -1843.073551528413,
+          "max_drawdown": 0.007699897092357572,
+          "total_trades": 44,
+          "win_rate": 37.2093023255814,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000002",
+          "return_pct": -0.005631193040971994,
+          "sharpe": -1072.3470423393812,
+          "max_drawdown": 0.015948098299511805,
+          "total_trades": 52,
+          "win_rate": 34.61538461538461,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000063",
+          "return_pct": 0.013194933076607414,
+          "sharpe": -722.1736771780932,
+          "max_drawdown": 0.018662866297244295,
+          "total_trades": 48,
+          "win_rate": 47.91666666666667,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000333",
+          "return_pct": 0.01735607743325818,
+          "sharpe": -339.6276381386457,
+          "max_drawdown": 0.043212160321666346,
+          "total_trades": 32,
+          "win_rate": 48.38709677419355,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000538",
+          "return_pct": 0.03280497285514139,
+          "sharpe": -440.5828126287422,
+          "max_drawdown": 0.029281019421460112,
+          "total_trades": 33,
+          "win_rate": 53.125,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000651",
+          "return_pct": 0.022284429220162563,
+          "sharpe": -581.5492036646715,
+          "max_drawdown": 0.012253878867042848,
+          "total_trades": 42,
+          "win_rate": 52.38095238095239,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000725",
+          "return_pct": 8.622741515864618e-05,
+          "sharpe": -4572.017780834467,
+          "max_drawdown": 0.0018224522966419445,
+          "total_trades": 46,
+          "win_rate": 37.77777777777778,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_000858",
+          "return_pct": 0.05858986352449574,
+          "sharpe": -141.8767630357931,
+          "max_drawdown": 0.1010331349371304,
+          "total_trades": 42,
+          "win_rate": 46.34146341463415,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_002415",
+          "return_pct": 0.010306820413505193,
+          "sharpe": -969.5998911315385,
+          "max_drawdown": 0.022004161045610506,
+          "total_trades": 39,
+          "win_rate": 43.58974358974359,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        },
+        {
+          "success": true,
+          "stock": "stock_sz_300059",
+          "return_pct": 0.005153084616496926,
+          "sharpe": -1358.6710367351834,
+          "max_drawdown": 0.009124698343815622,
+          "total_trades": 43,
+          "win_rate": 44.18604651162791,
+          "params": {
+            "fast_ma_period": 10,
+            "slow_ma_period": 35,
+            "atr_period": 28,
+            "atr_multiplier": 1.5,
+            "stop_loss": 0.07,
+            "take_profit": 0.12
+          }
+        }
+      ],
+      "statistics": {
+        "avg_return": 0.04224501731084698,
+        "avg_sharpe": -1368.7122369078947,
+        "positive_count": 14,
+        "negative_count": 4,
+        "success_rate": 77.77777777777779
+      }
+    }
+  }
+}

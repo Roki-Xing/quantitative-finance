@@ -1,0 +1,53 @@
+{
+  "date": "2025-11-22T22:20:15.825223",
+  "comparison": {
+    "rule_based": {
+      "total_fixes": 3,
+      "auto_fixable": 0,
+      "avg_confidence": 0.5
+    },
+    "codex_enhanced": {
+      "total_fixes": 3,
+      "auto_fixable": 3,
+      "avg_confidence": 0.815,
+      "codex_reviewed": 3,
+      "alternatives_applied": 0
+    }
+  },
+  "enhancement_stats": {
+    "total_reviewed": 3,
+    "fixes_improved": 0,
+    "confidence_increased": 3,
+    "confidence_decreased": 0,
+    "alternatives_suggested": 0
+  },
+  "fixes": [
+    {
+      "line": 3,
+      "category": "UNDEFINED_VARIABLE",
+      "rule_confidence": 0.5,
+      "combined_confidence": 0.815,
+      "codex_reviewed": true,
+      "codex_confidence": 0.95,
+      "alternative_suggested": false
+    },
+    {
+      "line": 9,
+      "category": "UNDEFINED_VARIABLE",
+      "rule_confidence": 0.5,
+      "combined_confidence": 0.815,
+      "codex_reviewed": true,
+      "codex_confidence": 0.95,
+      "alternative_suggested": false
+    },
+    {
+      "line": 10,
+      "category": "UNDEFINED_VARIABLE",
+      "rule_confidence": 0.5,
+      "combined_confidence": 0.815,
+      "codex_reviewed": true,
+      "codex_confidence": 0.95,
+      "alternative_suggested": false
+    }
+  ]
+}

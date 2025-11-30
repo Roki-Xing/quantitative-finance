@@ -1,0 +1,67 @@
+{
+  "experiment": "Experiment 8: Parameter Optimization",
+  "date": "2025-11-25T19:34:15.311180",
+  "best_results": {
+    "strategy_007": {
+      "success": true,
+      "return_pct": 10.273211968630394,
+      "sharpe": -2.707798963491949,
+      "max_drawdown": 1.9063947988413303,
+      "total_trades": 148,
+      "win_rate": 45.57823129251701,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    "strategy_016": {
+      "success": true,
+      "return_pct": 1.6095251474834367,
+      "sharpe": -14.335030217898476,
+      "max_drawdown": 0.7796903017561624,
+      "total_trades": 155,
+      "win_rate": 66.23376623376623,
+      "params": {
+        "maperiod": 28,
+        "stop_loss": 0.07,
+        "take_profit": 0.05
+      }
+    },
+    "strategy_022": {
+      "success": true,
+      "return_pct": 0.5633128208783746,
+      "sharpe": -32.15511703393051,
+      "max_drawdown": 0.5024703534246402,
+      "total_trades": 43,
+      "win_rate": 52.38095238095239,
+      "params": {
+        "fast_ma_period": 10,
+        "slow_ma_period": 35,
+        "atr_period": 28,
+        "atr_multiplier": 1.5,
+        "stop_loss": 0.07,
+        "take_profit": 0.12
+      }
+    },
+    "innovation_triple_fusion": {
+      "success": true,
+      "return_pct": 210.7492406421615,
+      "sharpe": 0.343582405898052,
+      "max_drawdown": 26.770857770334374,
+      "total_trades": 39,
+      "win_rate": 53.84615384615385,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    }
+  }
+}

@@ -1,0 +1,376 @@
+#!/usr/bin/env python3
+"""
+Experiment 11: 异常数据深度分析
+目标: 分析东方财富和云南白药的收益异常,优化行业分类
+"""
+
+import backtrader as bt
+import pandas as pd
+from pathlib import Path
+from datetime import datetime
+import json
+from tqdm import tqdm
+
+# ========== 配置 ==========
+DATA_DIR = Path("/root/autodl-tmp/eoh/backtest_data_extended")
+OUTPUT_DIR = Path("/root/autodl-tmp/eoh/experiment11_anomaly_analysis")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+INITIAL_CASH = 100000.0
+COMMISSION = 0.001
+
+# ========== 待分析的异常股票 ==========
+ANOMALY_STOCKS = {
+    "stock_sz_300059.csv": {
+        "name": "东方财富",
+        "issue": "金融行业,但在Exp9 innovation表现优异(165.36%),Exp10 baseline仅13.70%",
+        "hypothesis": "可能更接近科技/互联网特性,应使用innovation"
+    },
+    "stock_sz_000538.csv": {
+        "name": "云南白药",
+        "issue": "医药行业,Exp9 innovation 182.61%,但Exp10仅8.97%",
+        "hypothesis": "可能是随机性差异或参数需要调整"
+    }
+}
+
+# ========== 策略参数 ==========
+INNOVATION_PARAMS = {
+    'fast_ma_period': 15,
+    'medium_ma_period': 25,
+    'slow_ma_period': 40,
+    'rsi_period': 10,
+    'atr_period': 28,
+    'atr_multiple': 2.0,
+    'risk_factor': 0.03
+}
+
+BASELINE_PARAMS = {
+    'short_window': 30,
+    'long_window': 40,
+    'risk': 0.03,
+    'stop_loss': 0.03,
+    'take_profit': 0.08
+}
+
+# ========== 策略定义 ==========
+
+class AdaptiveMultiFactorStrategy(bt.Strategy):
+    """innovation_triple_fusion"""
+    params = (
+        ('fast_ma_period', 10),
+        ('medium_ma_period', 20),
+        ('slow_ma_period', 50),
+        ('rsi_period', 14),
+        ('atr_period', 14),
+        ('atr_multiple', 3.0),
+        ('risk_factor', 0.01),
+    )
+
+    def __init__(self):
+        from backtrader.indicators import SMA, ATR, RSI
+        self.fast_ma = SMA(self.data.close, period=self.params.fast_ma_period)
+        self.medium_ma = SMA(self.data.close, period=self.params.medium_ma_period)
+        self.slow_ma = SMA(self.data.close, period=self.params.slow_ma_period)
+        self.rsi = RSI(self.data.close, period=self.params.rsi_period)
+        self.atr = ATR(self.data, period=self.params.atr_period)
+
+        self.order = None
+        self.entry_price = None
+
+    def notify_order(self, order):
+        if order.status in [order.Submitted, order.Accepted]:
+            return
+
+        if order.status == order.Completed:
+            if order.isbuy():
+                self.entry_price = order.executed.price
+            elif order.issell():
+                self.entry_price = None
+            self.order = None
+
+    def next(self):
+        if self.order:
+            return
+
+        atr_val = self.atr[0] if self.atr[0] > 0 else self.data.close[0] * 0.02
+
+        if not self.position:
+            trend_strength = (self.fast_ma > self.medium_ma) and (self.medium_ma > self.slow_ma)
+            volatility_filter = self.rsi < 30 or self.rsi > 70
+
+            if trend_strength and volatility_filter:
+                risk_per_trade = self.broker.getvalue() * self.params.risk_factor
+                position_size = int(risk_per_trade / (atr_val * self.params.atr_multiple))
+
+                if position_size > 0:
+                    self.order = self.buy(size=position_size)
+
+        else:
+            if self.entry_price:
+                trailing_stop = self.entry_price - atr_val * self.params.atr_multiple
+
+                if self.data.close[0] < trailing_stop:
+                    self.order = self.close()
+                elif self.fast_ma < self.medium_ma:
+                    self.order = self.close()
+
+
+class TrendFollowingStrategy(bt.Strategy):
+    """strategy_007"""
+    params = (
+        ('short_window', 20),
+        ('long_window', 50),
+        ('risk', 0.02),
+        ('stop_loss', 0.05),
+        ('take_profit', 0.1)
+    )
+
+    def __init__(self):
+        self.order = None
+        self.dataclose = self.datas[0].close
+        self.sma_short = bt.indicators.SMA(period=self.p.short_window)
+        self.sma_long = bt.indicators.SMA(period=self.p.long_window)
+
+    def next(self):
+        if self.position:
+            if self.dataclose > self.sma_long and self.dataclose < self.sma_short:
+                self.close()
+            elif self.dataclose < self.sma_long and self.dataclose > self.sma_short:
+                self.close()
+
+        if not self.position:
+            if self.dataclose > self.sma_long:
+                size = int(self.broker.getvalue() * self.p.risk / self.dataclose[0])
+                if size > 0:
+                    self.buy(size=size)
+
+
+# ========== 回测函数 ==========
+
+def load_data(file_path):
+    """加载数据"""
+    df = pd.read_csv(file_path)
+    df['date'] = pd.to_datetime(df['date'])
+    df.set_index('date', inplace=True)
+    df = df[['open', 'high', 'low', 'close', 'volume']]
+    return df
+
+
+def run_backtest(strategy_class, params, data, stock_name, strategy_name):
+    """运行单次回测"""
+    try:
+        cerebro = bt.Cerebro()
+        cerebro.addstrategy(strategy_class, **params)
+
+        btdata = bt.feeds.PandasData(dataname=data)
+        cerebro.adddata(btdata)
+
+        cerebro.broker.setcash(INITIAL_CASH)
+        cerebro.broker.setcommission(commission=COMMISSION)
+
+        cerebro.addanalyzer(bt.analyzers.SharpeRatio, _name='sharpe', riskfreerate=0.03)
+        cerebro.addanalyzer(bt.analyzers.DrawDown, _name='drawdown')
+        cerebro.addanalyzer(bt.analyzers.TradeAnalyzer, _name='trades')
+        cerebro.addanalyzer(bt.analyzers.Returns, _name='returns')
+
+        initial = cerebro.broker.getvalue()
+        results = cerebro.run()
+        final = cerebro.broker.getvalue()
+
+        strat = results[0]
+        sharpe_analysis = strat.analyzers.sharpe.get_analysis()
+        dd_analysis = strat.analyzers.drawdown.get_analysis()
+        trade_analysis = strat.analyzers.trades.get_analysis()
+
+        return_pct = (final - initial) / initial * 100
+        sharpe = sharpe_analysis.get('sharperatio', None)
+        max_dd = dd_analysis.get('max', {}).get('drawdown', 0)
+        total_trades = trade_analysis.get('total', {}).get('total', 0)
+
+        won = trade_analysis.get('won', {}).get('total', 0)
+        lost = trade_analysis.get('lost', {}).get('total', 0)
+        win_rate = (won / (won + lost) * 100) if (won + lost) > 0 else 0
+
+        return {
+            "success": True,
+            "stock": stock_name,
+            "strategy": strategy_name,
+            "return_pct": return_pct,
+            "sharpe": sharpe,
+            "max_drawdown": max_dd,
+            "total_trades": total_trades,
+            "win_rate": win_rate,
+            "params": params
+        }
+    except Exception as e:
+        return {
+            "success": False,
+            "stock": stock_name,
+            "strategy": strategy_name,
+            "error": str(e),
+            "params": params
+        }
+
+
+def analyze_stock_characteristics(data, stock_name):
+    """分析股票特征"""
+    df = data.copy()
+
+    # 计算特征
+    df['returns'] = df['close'].pct_change()
+    df['volatility'] = df['returns'].rolling(20).std()
+    df['trend'] = (df['close'] - df['close'].shift(50)) / df['close'].shift(50)
+
+    # 计算ATR
+    df['high_low'] = df['high'] - df['low']
+    df['high_close'] = abs(df['high'] - df['close'].shift(1))
+    df['low_close'] = abs(df['low'] - df['close'].shift(1))
+    df['tr'] = df[['high_low', 'high_close', 'low_close']].max(axis=1)
+    df['atr'] = df['tr'].rolling(14).mean()
+    df['atr_pct'] = df['atr'] / df['close']
+
+    return {
+        "stock": stock_name,
+        "avg_volatility": df['volatility'].mean() * 100,
+        "avg_trend": df['trend'].mean() * 100,
+        "avg_atr_pct": df['atr_pct'].mean() * 100,
+        "total_return": (df['close'].iloc[-1] / df['close'].iloc[0] - 1) * 100,
+        "periods": len(df)
+    }
+
+
+# ========== 主分析函数 ==========
+
+def main():
+    print(f"""
+{'='*80}
+Experiment 11: 异常数据深度分析
+{'='*80}
+目标: 分析东方财富和云南白药的收益异常
+待分析股票: 2只
+测试策略: 2个 (innovation vs baseline)
+{'='*80}
+    """)
+
+    all_results = []
+    characteristics = []
+
+    for stock_file, info in ANOMALY_STOCKS.items():
+        print(f"\n{'='*80}")
+        print(f"分析股票: {info['name']}")
+        print(f"问题: {info['issue']}")
+        print(f"假设: {info['hypothesis']}")
+        print(f"{'='*80}\n")
+
+        file_path = DATA_DIR / stock_file
+
+        try:
+            # 加载数据
+            data = load_data(file_path)
+
+            # 分析特征
+            print(f"📊 分析 {info['name']} 的市场特征...")
+            char = analyze_stock_characteristics(data, info['name'])
+            characteristics.append(char)
+
+            print(f"  平均波动率: {char['avg_volatility']:.3f}%")
+            print(f"  平均趋势: {char['avg_trend']:.3f}%")
+            print(f"  平均ATR比率: {char['avg_atr_pct']:.3f}%")
+            print(f"  总收益: {char['total_return']:.2f}%")
+            print(f"  数据点数: {char['periods']}")
+
+            # 测试innovation策略
+            print(f"\n🔬 测试 innovation_triple_fusion...")
+            result_innovation = run_backtest(
+                AdaptiveMultiFactorStrategy,
+                INNOVATION_PARAMS,
+                data,
+                info['name'],
+                "innovation"
+            )
+            all_results.append(result_innovation)
+
+            if result_innovation['success']:
+                print(f"  ✅ 收益: {result_innovation['return_pct']:.2f}%")
+                print(f"     Sharpe: {result_innovation['sharpe']}")
+                print(f"     交易次数: {result_innovation['total_trades']}")
+                print(f"     胜率: {result_innovation['win_rate']:.1f}%")
+
+            # 测试baseline策略
+            print(f"\n🔬 测试 strategy_007 (baseline)...")
+            result_baseline = run_backtest(
+                TrendFollowingStrategy,
+                BASELINE_PARAMS,
+                data,
+                info['name'],
+                "baseline"
+            )
+            all_results.append(result_baseline)
+
+            if result_baseline['success']:
+                print(f"  ✅ 收益: {result_baseline['return_pct']:.2f}%")
+                print(f"     Sharpe: {result_baseline['sharpe']}")
+                print(f"     交易次数: {result_baseline['total_trades']}")
+                print(f"     胜率: {result_baseline['win_rate']:.1f}%")
+
+            # 对比分析
+            if result_innovation['success'] and result_baseline['success']:
+                print(f"\n📈 策略对比:")
+                print(f"  innovation: {result_innovation['return_pct']:.2f}%")
+                print(f"  baseline:   {result_baseline['return_pct']:.2f}%")
+                diff = result_innovation['return_pct'] - result_baseline['return_pct']
+                print(f"  差异: {diff:+.2f}%")
+
+                if diff > 10:
+                    print(f"  💡 建议: 应使用 innovation 策略")
+                elif diff < -10:
+                    print(f"  💡 建议: 应使用 baseline 策略")
+                else:
+                    print(f"  💡 建议: 两者差异不大")
+
+        except Exception as e:
+            print(f"❌ 错误: {str(e)}")
+
+    # 保存结果
+    output_file = OUTPUT_DIR / "anomaly_analysis_results.json"
+    with open(output_file, 'w') as f:
+        json.dump({
+            "experiment": "Experiment 11: Anomaly Analysis",
+            "date": datetime.now().isoformat(),
+            "results": all_results,
+            "characteristics": characteristics
+        }, f, indent=2, default=str)
+
+    print(f"\n{'='*80}")
+    print("分析完成!")
+    print(f"结果已保存: {output_file}")
+    print(f"{'='*80}")
+
+    # 生成建议
+    print(f"\n{'='*80}")
+    print("建议总结")
+    print(f"{'='*80}\n")
+
+    successful = [r for r in all_results if r['success']]
+
+    for stock in ANOMALY_STOCKS.values():
+        stock_results = [r for r in successful if r['stock'] == stock['name']]
+        if len(stock_results) == 2:
+            innovation_result = [r for r in stock_results if r['strategy'] == 'innovation'][0]
+            baseline_result = [r for r in stock_results if r['strategy'] == 'baseline'][0]
+
+            print(f"📌 {stock['name']}:")
+            print(f"  innovation: {innovation_result['return_pct']:.2f}%")
+            print(f"  baseline:   {baseline_result['return_pct']:.2f}%")
+
+            if innovation_result['return_pct'] > baseline_result['return_pct'] + 10:
+                print(f"  ✅ 建议: 重新分类为适合 innovation 的行业")
+            elif baseline_result['return_pct'] > innovation_result['return_pct'] + 10:
+                print(f"  ✅ 建议: 保持使用 baseline 策略")
+            else:
+                print(f"  ⚠️  两者差异不大,需要进一步分析")
+            print()
+
+
+if __name__ == "__main__":
+    main()
