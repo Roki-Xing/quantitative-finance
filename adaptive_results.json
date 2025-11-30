@@ -1,0 +1,1050 @@
+{
+  "experiment": "Experiment 10: Industry-Adaptive Strategy",
+  "date": "2025-11-25T20:05:13.903780",
+  "total_stocks": 18,
+  "results": [
+    {
+      "success": true,
+      "stock": "\u8d35\u5dde\u8305\u53f0",
+      "industry": "\u6d88\u8d39",
+      "strategy_used": "innovation",
+      "return_pct": 210.7492406421615,
+      "sharpe": 0.343582405898052,
+      "max_drawdown": 26.770857770334374,
+      "total_trades": 39,
+      "win_rate": 53.84615384615385,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4f0a\u5229\u80a1\u4efd",
+      "industry": "\u6d88\u8d39",
+      "strategy_used": "innovation",
+      "return_pct": 47.397855776038455,
+      "sharpe": -0.028231936684347873,
+      "max_drawdown": 19.831075247649412,
+      "total_trades": 43,
+      "win_rate": 39.53488372093023,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e94\u7cae\u6db2",
+      "industry": "\u6d88\u8d39",
+      "strategy_used": "innovation",
+      "return_pct": 149.30442338775606,
+      "sharpe": 0.2619672605662197,
+      "max_drawdown": 17.740054128860276,
+      "total_trades": 41,
+      "win_rate": 53.65853658536586,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u6052\u745e\u533b\u836f",
+      "industry": "\u533b\u836f",
+      "strategy_used": "innovation",
+      "return_pct": 54.98160373580744,
+      "sharpe": 0.031986172067079065,
+      "max_drawdown": 24.145069682874617,
+      "total_trades": 42,
+      "win_rate": 47.61904761904761,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e91\u5357\u767d\u836f",
+      "industry": "\u533b\u836f",
+      "strategy_used": "innovation",
+      "return_pct": 8.968162831322479,
+      "sharpe": -0.6610058543779623,
+      "max_drawdown": 12.78524616480423,
+      "total_trades": 22,
+      "win_rate": 50.0,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u7f8e\u7684\u96c6\u56e2",
+      "industry": "\u5236\u9020",
+      "strategy_used": "innovation",
+      "return_pct": 30.690697496112918,
+      "sharpe": -0.030631818794599155,
+      "max_drawdown": 23.067764694000022,
+      "total_trades": 43,
+      "win_rate": 40.476190476190474,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u683c\u529b\u7535\u5668",
+      "industry": "\u5236\u9020",
+      "strategy_used": "innovation",
+      "return_pct": 29.896493505023507,
+      "sharpe": -0.13457218898362203,
+      "max_drawdown": 14.136788207375197,
+      "total_trades": 14,
+      "win_rate": 50.0,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u62db\u5546\u94f6\u884c",
+      "industry": "\u91d1\u878d",
+      "strategy_used": "baseline",
+      "return_pct": 5.336840675669198,
+      "sharpe": -4.153660867910912,
+      "max_drawdown": 1.4972193047872986,
+      "total_trades": 159,
+      "win_rate": 43.67088607594937,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e2d\u56fd\u5e73\u5b89",
+      "industry": "\u91d1\u878d",
+      "strategy_used": "baseline",
+      "return_pct": 5.193796949623458,
+      "sharpe": -2.6478693403750526,
+      "max_drawdown": 2.569218460013347,
+      "total_trades": 170,
+      "win_rate": 37.8698224852071,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u5e73\u5b89\u94f6\u884c",
+      "industry": "\u91d1\u878d",
+      "strategy_used": "baseline",
+      "return_pct": 1.935093622167071,
+      "sharpe": -3.923952563609135,
+      "max_drawdown": 2.2105435294387226,
+      "total_trades": 166,
+      "win_rate": 36.96969696969697,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+      "industry": "\u91d1\u878d",
+      "strategy_used": "baseline",
+      "return_pct": 13.702275732315917,
+      "sharpe": -1.2639389600497237,
+      "max_drawdown": 6.829453315167704,
+      "total_trades": 161,
+      "win_rate": 39.75155279503105,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e2d\u56fd\u77f3\u5316",
+      "industry": "\u80fd\u6e90",
+      "strategy_used": "baseline",
+      "return_pct": 3.0308267208014295,
+      "sharpe": -7.09147729579855,
+      "max_drawdown": 1.174360105505964,
+      "total_trades": 161,
+      "win_rate": 40.625,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e2d\u56fd\u77f3\u6cb9",
+      "industry": "\u80fd\u6e90",
+      "strategy_used": "baseline",
+      "return_pct": 2.232852689202642,
+      "sharpe": -4.945643067124987,
+      "max_drawdown": 2.1302419862877366,
+      "total_trades": 143,
+      "win_rate": 37.32394366197183,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4fdd\u5229\u53d1\u5c55",
+      "industry": "\u623f\u5730\u4ea7",
+      "strategy_used": "baseline",
+      "return_pct": 1.0489878864591593,
+      "sharpe": -2.9608030845608164,
+      "max_drawdown": 3.9456143355147937,
+      "total_trades": 142,
+      "win_rate": 39.71631205673759,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e07\u79d1A",
+      "industry": "\u623f\u5730\u4ea7",
+      "strategy_used": "baseline",
+      "return_pct": 0.6709679179943778,
+      "sharpe": -3.2846297855587445,
+      "max_drawdown": 4.263704120436747,
+      "total_trades": 148,
+      "win_rate": 35.374149659863946,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e2d\u5174\u901a\u8baf",
+      "industry": "\u79d1\u6280",
+      "strategy_used": "baseline",
+      "return_pct": 2.0442053755923695,
+      "sharpe": -3.493597408528911,
+      "max_drawdown": 3.4483660445622326,
+      "total_trades": 175,
+      "win_rate": 33.90804597701149,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4eac\u4e1c\u65b9A",
+      "industry": "\u79d1\u6280",
+      "strategy_used": "baseline",
+      "return_pct": 3.3942506942351174,
+      "sharpe": -3.140537425663063,
+      "max_drawdown": 2.1935332398939025,
+      "total_trades": 178,
+      "win_rate": 42.69662921348314,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u6d77\u5eb7\u5a01\u89c6",
+      "industry": "\u79d1\u6280",
+      "strategy_used": "baseline",
+      "return_pct": 9.561466531218073,
+      "sharpe": -2.8304566332228904,
+      "max_drawdown": 1.9777099986985063,
+      "total_trades": 137,
+      "win_rate": 38.970588235294116,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    }
+  ],
+  "statistics": {
+    "avg_return": 32.23000234275007,
+    "avg_sharpe": -2.219637355150665,
+    "success_rate": 100.0,
+    "positive_count": 18,
+    "total_stocks": 18,
+    "industry_stats": {
+      "\u6d88\u8d39": [
+        {
+          "success": true,
+          "stock": "\u8d35\u5dde\u8305\u53f0",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 210.7492406421615,
+          "sharpe": 0.343582405898052,
+          "max_drawdown": 26.770857770334374,
+          "total_trades": 39,
+          "win_rate": 53.84615384615385,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4f0a\u5229\u80a1\u4efd",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 47.397855776038455,
+          "sharpe": -0.028231936684347873,
+          "max_drawdown": 19.831075247649412,
+          "total_trades": 43,
+          "win_rate": 39.53488372093023,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e94\u7cae\u6db2",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 149.30442338775606,
+          "sharpe": 0.2619672605662197,
+          "max_drawdown": 17.740054128860276,
+          "total_trades": 41,
+          "win_rate": 53.65853658536586,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        }
+      ],
+      "\u533b\u836f": [
+        {
+          "success": true,
+          "stock": "\u6052\u745e\u533b\u836f",
+          "industry": "\u533b\u836f",
+          "strategy_used": "innovation",
+          "return_pct": 54.98160373580744,
+          "sharpe": 0.031986172067079065,
+          "max_drawdown": 24.145069682874617,
+          "total_trades": 42,
+          "win_rate": 47.61904761904761,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e91\u5357\u767d\u836f",
+          "industry": "\u533b\u836f",
+          "strategy_used": "innovation",
+          "return_pct": 8.968162831322479,
+          "sharpe": -0.6610058543779623,
+          "max_drawdown": 12.78524616480423,
+          "total_trades": 22,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        }
+      ],
+      "\u5236\u9020": [
+        {
+          "success": true,
+          "stock": "\u7f8e\u7684\u96c6\u56e2",
+          "industry": "\u5236\u9020",
+          "strategy_used": "innovation",
+          "return_pct": 30.690697496112918,
+          "sharpe": -0.030631818794599155,
+          "max_drawdown": 23.067764694000022,
+          "total_trades": 43,
+          "win_rate": 40.476190476190474,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u683c\u529b\u7535\u5668",
+          "industry": "\u5236\u9020",
+          "strategy_used": "innovation",
+          "return_pct": 29.896493505023507,
+          "sharpe": -0.13457218898362203,
+          "max_drawdown": 14.136788207375197,
+          "total_trades": 14,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        }
+      ],
+      "\u91d1\u878d": [
+        {
+          "success": true,
+          "stock": "\u62db\u5546\u94f6\u884c",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 5.336840675669198,
+          "sharpe": -4.153660867910912,
+          "max_drawdown": 1.4972193047872986,
+          "total_trades": 159,
+          "win_rate": 43.67088607594937,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u5e73\u5b89",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 5.193796949623458,
+          "sharpe": -2.6478693403750526,
+          "max_drawdown": 2.569218460013347,
+          "total_trades": 170,
+          "win_rate": 37.8698224852071,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u5e73\u5b89\u94f6\u884c",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 1.935093622167071,
+          "sharpe": -3.923952563609135,
+          "max_drawdown": 2.2105435294387226,
+          "total_trades": 166,
+          "win_rate": 36.96969696969697,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 13.702275732315917,
+          "sharpe": -1.2639389600497237,
+          "max_drawdown": 6.829453315167704,
+          "total_trades": 161,
+          "win_rate": 39.75155279503105,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ],
+      "\u80fd\u6e90": [
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u77f3\u5316",
+          "industry": "\u80fd\u6e90",
+          "strategy_used": "baseline",
+          "return_pct": 3.0308267208014295,
+          "sharpe": -7.09147729579855,
+          "max_drawdown": 1.174360105505964,
+          "total_trades": 161,
+          "win_rate": 40.625,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u77f3\u6cb9",
+          "industry": "\u80fd\u6e90",
+          "strategy_used": "baseline",
+          "return_pct": 2.232852689202642,
+          "sharpe": -4.945643067124987,
+          "max_drawdown": 2.1302419862877366,
+          "total_trades": 143,
+          "win_rate": 37.32394366197183,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ],
+      "\u623f\u5730\u4ea7": [
+        {
+          "success": true,
+          "stock": "\u4fdd\u5229\u53d1\u5c55",
+          "industry": "\u623f\u5730\u4ea7",
+          "strategy_used": "baseline",
+          "return_pct": 1.0489878864591593,
+          "sharpe": -2.9608030845608164,
+          "max_drawdown": 3.9456143355147937,
+          "total_trades": 142,
+          "win_rate": 39.71631205673759,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e07\u79d1A",
+          "industry": "\u623f\u5730\u4ea7",
+          "strategy_used": "baseline",
+          "return_pct": 0.6709679179943778,
+          "sharpe": -3.2846297855587445,
+          "max_drawdown": 4.263704120436747,
+          "total_trades": 148,
+          "win_rate": 35.374149659863946,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ],
+      "\u79d1\u6280": [
+        {
+          "success": true,
+          "stock": "\u4e2d\u5174\u901a\u8baf",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 2.0442053755923695,
+          "sharpe": -3.493597408528911,
+          "max_drawdown": 3.4483660445622326,
+          "total_trades": 175,
+          "win_rate": 33.90804597701149,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4eac\u4e1c\u65b9A",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 3.3942506942351174,
+          "sharpe": -3.140537425663063,
+          "max_drawdown": 2.1935332398939025,
+          "total_trades": 178,
+          "win_rate": 42.69662921348314,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u6d77\u5eb7\u5a01\u89c6",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 9.561466531218073,
+          "sharpe": -2.8304566332228904,
+          "max_drawdown": 1.9777099986985063,
+          "total_trades": 137,
+          "win_rate": 38.970588235294116,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ]
+    },
+    "strategy_stats": {
+      "innovation": [
+        {
+          "success": true,
+          "stock": "\u8d35\u5dde\u8305\u53f0",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 210.7492406421615,
+          "sharpe": 0.343582405898052,
+          "max_drawdown": 26.770857770334374,
+          "total_trades": 39,
+          "win_rate": 53.84615384615385,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4f0a\u5229\u80a1\u4efd",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 47.397855776038455,
+          "sharpe": -0.028231936684347873,
+          "max_drawdown": 19.831075247649412,
+          "total_trades": 43,
+          "win_rate": 39.53488372093023,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e94\u7cae\u6db2",
+          "industry": "\u6d88\u8d39",
+          "strategy_used": "innovation",
+          "return_pct": 149.30442338775606,
+          "sharpe": 0.2619672605662197,
+          "max_drawdown": 17.740054128860276,
+          "total_trades": 41,
+          "win_rate": 53.65853658536586,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u6052\u745e\u533b\u836f",
+          "industry": "\u533b\u836f",
+          "strategy_used": "innovation",
+          "return_pct": 54.98160373580744,
+          "sharpe": 0.031986172067079065,
+          "max_drawdown": 24.145069682874617,
+          "total_trades": 42,
+          "win_rate": 47.61904761904761,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e91\u5357\u767d\u836f",
+          "industry": "\u533b\u836f",
+          "strategy_used": "innovation",
+          "return_pct": 8.968162831322479,
+          "sharpe": -0.6610058543779623,
+          "max_drawdown": 12.78524616480423,
+          "total_trades": 22,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u7f8e\u7684\u96c6\u56e2",
+          "industry": "\u5236\u9020",
+          "strategy_used": "innovation",
+          "return_pct": 30.690697496112918,
+          "sharpe": -0.030631818794599155,
+          "max_drawdown": 23.067764694000022,
+          "total_trades": 43,
+          "win_rate": 40.476190476190474,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u683c\u529b\u7535\u5668",
+          "industry": "\u5236\u9020",
+          "strategy_used": "innovation",
+          "return_pct": 29.896493505023507,
+          "sharpe": -0.13457218898362203,
+          "max_drawdown": 14.136788207375197,
+          "total_trades": 14,
+          "win_rate": 50.0,
+          "params": {
+            "fast_ma_period": 15,
+            "medium_ma_period": 25,
+            "slow_ma_period": 40,
+            "rsi_period": 10,
+            "atr_period": 28,
+            "atr_multiple": 2.0,
+            "risk_factor": 0.03
+          }
+        }
+      ],
+      "baseline": [
+        {
+          "success": true,
+          "stock": "\u62db\u5546\u94f6\u884c",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 5.336840675669198,
+          "sharpe": -4.153660867910912,
+          "max_drawdown": 1.4972193047872986,
+          "total_trades": 159,
+          "win_rate": 43.67088607594937,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u5e73\u5b89",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 5.193796949623458,
+          "sharpe": -2.6478693403750526,
+          "max_drawdown": 2.569218460013347,
+          "total_trades": 170,
+          "win_rate": 37.8698224852071,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u5e73\u5b89\u94f6\u884c",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 1.935093622167071,
+          "sharpe": -3.923952563609135,
+          "max_drawdown": 2.2105435294387226,
+          "total_trades": 166,
+          "win_rate": 36.96969696969697,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+          "industry": "\u91d1\u878d",
+          "strategy_used": "baseline",
+          "return_pct": 13.702275732315917,
+          "sharpe": -1.2639389600497237,
+          "max_drawdown": 6.829453315167704,
+          "total_trades": 161,
+          "win_rate": 39.75155279503105,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u77f3\u5316",
+          "industry": "\u80fd\u6e90",
+          "strategy_used": "baseline",
+          "return_pct": 3.0308267208014295,
+          "sharpe": -7.09147729579855,
+          "max_drawdown": 1.174360105505964,
+          "total_trades": 161,
+          "win_rate": 40.625,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u56fd\u77f3\u6cb9",
+          "industry": "\u80fd\u6e90",
+          "strategy_used": "baseline",
+          "return_pct": 2.232852689202642,
+          "sharpe": -4.945643067124987,
+          "max_drawdown": 2.1302419862877366,
+          "total_trades": 143,
+          "win_rate": 37.32394366197183,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4fdd\u5229\u53d1\u5c55",
+          "industry": "\u623f\u5730\u4ea7",
+          "strategy_used": "baseline",
+          "return_pct": 1.0489878864591593,
+          "sharpe": -2.9608030845608164,
+          "max_drawdown": 3.9456143355147937,
+          "total_trades": 142,
+          "win_rate": 39.71631205673759,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e07\u79d1A",
+          "industry": "\u623f\u5730\u4ea7",
+          "strategy_used": "baseline",
+          "return_pct": 0.6709679179943778,
+          "sharpe": -3.2846297855587445,
+          "max_drawdown": 4.263704120436747,
+          "total_trades": 148,
+          "win_rate": 35.374149659863946,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4e2d\u5174\u901a\u8baf",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 2.0442053755923695,
+          "sharpe": -3.493597408528911,
+          "max_drawdown": 3.4483660445622326,
+          "total_trades": 175,
+          "win_rate": 33.90804597701149,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u4eac\u4e1c\u65b9A",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 3.3942506942351174,
+          "sharpe": -3.140537425663063,
+          "max_drawdown": 2.1935332398939025,
+          "total_trades": 178,
+          "win_rate": 42.69662921348314,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        },
+        {
+          "success": true,
+          "stock": "\u6d77\u5eb7\u5a01\u89c6",
+          "industry": "\u79d1\u6280",
+          "strategy_used": "baseline",
+          "return_pct": 9.561466531218073,
+          "sharpe": -2.8304566332228904,
+          "max_drawdown": 1.9777099986985063,
+          "total_trades": 137,
+          "win_rate": 38.970588235294116,
+          "params": {
+            "short_window": 30,
+            "long_window": 40,
+            "risk": 0.03,
+            "stop_loss": 0.03,
+            "take_profit": 0.08
+          }
+        }
+      ]
+    }
+  }
+}

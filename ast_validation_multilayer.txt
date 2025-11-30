@@ -1,0 +1,1163 @@
+Found 30 Python files in experiment4_trading_extended/multilayer
+
+
+================================================================================
+Validating: strategy_001.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_001.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (3)
+--------------------------------------------------------------------------------
+
+1. Line 72: Potentially undefined variable: 'TrendFollowingStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: TrendFollowingStrategy
+   Fix: Define 'TrendFollowingStrategy' before use or check spelling
+
+2. Line 73: Potentially undefined variable: 'TrendFollowingStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: TrendFollowingStrategy
+   Fix: Define 'TrendFollowingStrategy' before use or check spelling
+
+3. Line 73: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 24: next() in 'TrendFollowingStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 4
+[YELLOW] MEDIUM: 3
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_002.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_002.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 44: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 34: next() in 'BollingerBandsMeanReversionStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 2
+🟠 HIGH: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_003.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_003.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 47: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 86: Potentially undefined variable: 'RSI_MACD_Momentum_Strategy'
+   Category: UNDEFINED_VARIABLE
+   Code: RSI_MACD_Momentum_Strategy
+   Fix: Define 'RSI_MACD_Momentum_Strategy' before use or check spelling
+
+2. Line 20: __init__ in 'RSI_MACD_Momentum_Strategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+
+================================================================================
+Validating: strategy_004.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_004.py
+Date: 2025-11-24 09:35:29
+
+
+[RED] CRITICAL Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 60: Orphaned 'elif' statement in function 'next'
+   Category: METHOD_BOUNDARY
+   Code: elif self.position.size < 0:
+   Fix: Remove or convert to 'if', or ensure proper if-elif chain
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 60: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position.size < 0:
+   Fix: Adjust indent to match 'if' at column 20
+
+[YELLOW] MEDIUM Issues (3)
+--------------------------------------------------------------------------------
+
+1. Line 117: Potentially undefined variable: 'VolatilityBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: VolatilityBreakoutStrategy
+   Fix: Define 'VolatilityBreakoutStrategy' before use or check spelling
+
+2. Line 120: Potentially undefined variable: 'VolatilityBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: VolatilityBreakoutStrategy
+   Fix: Define 'VolatilityBreakoutStrategy' before use or check spelling
+
+3. Line 122: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 41: next() in 'VolatilityBreakoutStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 6
+[RED] CRITICAL: 1
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 3
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_005.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_005.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 41: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 16
+
+[YELLOW] MEDIUM Issues (21)
+--------------------------------------------------------------------------------
+
+1. Line 22: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+2. Line 23: Potentially undefined variable: 'btind'
+   Category: UNDEFINED_VARIABLE
+   Code: btind
+   Fix: Define 'btind' before use or check spelling
+
+3. Line 24: Potentially undefined variable: 'btind'
+   Category: UNDEFINED_VARIABLE
+   Code: btind
+   Fix: Define 'btind' before use or check spelling
+
+4. Line 25: Potentially undefined variable: 'btind'
+   Category: UNDEFINED_VARIABLE
+   Code: btind
+   Fix: Define 'btind' before use or check spelling
+
+5. Line 26: Potentially undefined variable: 'btind'
+   Category: UNDEFINED_VARIABLE
+   Code: btind
+   Fix: Define 'btind' before use or check spelling
+
+6. Line 31: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+7. Line 35: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+8. Line 36: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+9. Line 39: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+10. Line 40: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+11. Line 43: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+12. Line 44: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+13. Line 45: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+14. Line 46: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+15. Line 47: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+16. Line 48: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+17. Line 49: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+18. Line 74: Potentially undefined variable: 'ASharePriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: ASharePriceVolumeStrategy
+   Fix: Define 'ASharePriceVolumeStrategy' before use or check spelling
+
+19. Line 77: Potentially undefined variable: 'ASharePriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: ASharePriceVolumeStrategy
+   Fix: Define 'ASharePriceVolumeStrategy' before use or check spelling
+
+20. Line 78: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+21. Line 19: __init__ in 'ASharePriceVolumeStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 28: next() in 'ASharePriceVolumeStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 23
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 21
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_006.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_006.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 57: Potentially undefined variable: 'MultiFactorComprehensiveStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MultiFactorComprehensiveStrategy
+   Fix: Define 'MultiFactorComprehensiveStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_007.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_007.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 38: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.fast_ma < self.slow_ma and self.fast_ma[-1] > self.slow_ma[-1]:
+   Fix: Adjust indent to match 'if' at column 16
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 71: Potentially undefined variable: 'TrendFollowingStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: TrendFollowingStrategy
+   Fix: Define 'TrendFollowingStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 2
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_008.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_008.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 42: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.sma < self.bollinger_bands.mean and self.bollinger_bands.lines.low[0] 
+   Fix: Adjust indent to match 'if' at column 16
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 90: Potentially undefined variable: 'MeanReversionStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MeanReversionStrategy
+   Fix: Define 'MeanReversionStrategy' before use or check spelling
+
+2. Line 19: __init__ in 'MeanReversionStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 24: next() in 'MeanReversionStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 4
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_009.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_009.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 38: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 66: Potentially undefined variable: 'MomentumRSI_MACD'
+   Category: UNDEFINED_VARIABLE
+   Code: MomentumRSI_MACD
+   Fix: Define 'MomentumRSI_MACD' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 28: next() in 'MomentumRSI_MACD' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_010.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_010.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 24: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 66: Potentially undefined variable: 'ATRBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: ATRBreakoutStrategy
+   Fix: Define 'ATRBreakoutStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 18: next() in 'ATRBreakoutStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_011.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_011.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 30: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position.size > 0:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 56: Potentially undefined variable: 'ASharePriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: ASharePriceVolumeStrategy
+   Fix: Define 'ASharePriceVolumeStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 23: next() in 'ASharePriceVolumeStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_012.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_012.py
+Date: 2025-11-24 09:35:29
+
+
+[RED] CRITICAL Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 0: Syntax error: '(' was never closed (<unknown>, line 77)
+   Category: SYNTAX_ERROR
+   Fix: Fix syntax errors first
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[RED] CRITICAL: 1
+
+================================================================================
+Validating: strategy_013.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_013.py
+Date: 2025-11-24 09:35:29
+
+[OK] No structural issues found!
+
+================================================================================
+Validating: strategy_014.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_014.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 32: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.data_close[0] > self.bollinger.top[0] and self.data_close[-1] < self.b
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 74: Potentially undefined variable: 'MeanReversionStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MeanReversionStrategy
+   Fix: Define 'MeanReversionStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 2
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_015.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_015.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (3)
+--------------------------------------------------------------------------------
+
+1. Line 59: Potentially undefined variable: 'args'
+   Category: UNDEFINED_VARIABLE
+   Code: args
+   Fix: Define 'args' before use or check spelling
+
+2. Line 59: Potentially undefined variable: 'kwargs'
+   Category: UNDEFINED_VARIABLE
+   Code: kwargs
+   Fix: Define 'kwargs' before use or check spelling
+
+3. Line 66: Potentially undefined variable: 'RSI_MACD_Momentum_Strategy'
+   Category: UNDEFINED_VARIABLE
+   Code: RSI_MACD_Momentum_Strategy
+   Fix: Define 'RSI_MACD_Momentum_Strategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+[YELLOW] MEDIUM: 3
+
+================================================================================
+Validating: strategy_016.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_016.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 32: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 74: Potentially undefined variable: 'ATRVolatilityBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: ATRVolatilityBreakoutStrategy
+   Fix: Define 'ATRVolatilityBreakoutStrategy' before use or check spelling
+
+2. Line 13: __init__ in 'ATRVolatilityBreakoutStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+
+================================================================================
+Validating: strategy_017.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_017.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (3)
+--------------------------------------------------------------------------------
+
+1. Line 24: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+2. Line 25: Potentially undefined variable: 'stock'
+   Category: UNDEFINED_VARIABLE
+   Code: stock
+   Fix: Define 'stock' before use or check spelling
+
+3. Line 80: Potentially undefined variable: 'PriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: PriceVolumeStrategy
+   Fix: Define 'PriceVolumeStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 47: next() in 'PriceVolumeStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 4
+[YELLOW] MEDIUM: 3
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_018.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_018.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 49: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+2. Line 61: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 16
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 97: Potentially undefined variable: 'AShareMultiFactorStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: AShareMultiFactorStrategy
+   Fix: Define 'AShareMultiFactorStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 2
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_019.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_019.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 30: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.data_fast_ma < self.data_slow_ma:
+   Fix: Adjust indent to match 'if' at column 12
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+🟠 HIGH: 1
+
+================================================================================
+Validating: strategy_020.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_020.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 31: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 70: Potentially undefined variable: 'MeanReversionStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MeanReversionStrategy
+   Fix: Define 'MeanReversionStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 2
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_021.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_021.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 29: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 58: Potentially undefined variable: 'MomentumStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MomentumStrategy
+   Fix: Define 'MomentumStrategy' before use or check spelling
+
+2. Line 16: __init__ in 'MomentumStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 21: next() in 'MomentumStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 4
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_022.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_022.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 42: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.sell_signal < 0 and self.position.size > 0:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 67: Potentially undefined variable: 'VolatilityBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: VolatilityBreakoutStrategy
+   Fix: Define 'VolatilityBreakoutStrategy' before use or check spelling
+
+2. Line 18: __init__ in 'VolatilityBreakoutStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+
+================================================================================
+Validating: strategy_023.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_023.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 75: Potentially undefined variable: 'PriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: PriceVolumeStrategy
+   Fix: Define 'PriceVolumeStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_024.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_024.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 88: Potentially undefined variable: 'AShareComprehensiveStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: AShareComprehensiveStrategy
+   Fix: Define 'AShareComprehensiveStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_025.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_025.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (3)
+--------------------------------------------------------------------------------
+
+1. Line 33: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.sma_fast < self.sma_slow and self.sma_fast[-1] > self.sma_slow[-1]:
+   Fix: Adjust indent to match 'if' at column 16
+
+2. Line 45: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position.size < 0:
+   Fix: Adjust indent to match 'if' at column 16
+
+3. Line 56: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position.size < 0:
+   Fix: Adjust indent to match 'if' at column 16
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 80: Potentially undefined variable: 'TrendFollowingStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: TrendFollowingStrategy
+   Fix: Define 'TrendFollowingStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 23: next() in 'TrendFollowingStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 5
+🟠 HIGH: 3
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_026.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_026.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 36: Indentation mismatch for 'else:' statement
+   Category: INDENT_MISMATCH
+   Code: else:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 79: Potentially undefined variable: 'MeanReversionStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: MeanReversionStrategy
+   Fix: Define 'MeanReversionStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 22: next() in 'MeanReversionStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_027.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_027.py
+Date: 2025-11-24 09:35:29
+
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 61: Potentially undefined variable: 'AShareMomentumStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: AShareMomentumStrategy
+   Fix: Define 'AShareMomentumStrategy' before use or check spelling
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[YELLOW] MEDIUM: 1
+
+================================================================================
+Validating: strategy_028.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_028.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 61: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.order and self.order.status!= bt.Order.Submitted:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (2)
+--------------------------------------------------------------------------------
+
+1. Line 83: Potentially undefined variable: 'VolatilityBreakoutStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: VolatilityBreakoutStrategy
+   Fix: Define 'VolatilityBreakoutStrategy' before use or check spelling
+
+2. Line 13: __init__ in 'VolatilityBreakoutStrategy' should initialize self.order
+   Category: MISSING_INIT
+   Fix: Add: self.order = None
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 2
+
+================================================================================
+Validating: strategy_029.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_029.py
+Date: 2025-11-24 09:35:29
+
+
+🟠 HIGH Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 41: Indentation mismatch for 'elif' statement
+   Category: INDENT_MISMATCH
+   Code: elif self.position:
+   Fix: Adjust indent to match 'if' at column 12
+
+[YELLOW] MEDIUM Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 78: Potentially undefined variable: 'PriceVolumeStrategy'
+   Category: UNDEFINED_VARIABLE
+   Code: PriceVolumeStrategy
+   Fix: Define 'PriceVolumeStrategy' before use or check spelling
+
+[GREEN] LOW Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 30: next() in 'PriceVolumeStrategy' should check for pending orders
+   Category: MISSING_CHECK
+   Fix: Add: if self.order: return
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 3
+🟠 HIGH: 1
+[YELLOW] MEDIUM: 1
+[GREEN] LOW: 1
+
+================================================================================
+Validating: strategy_030.py
+================================================================================
+================================================================================
+AST STRUCTURE VALIDATION REPORT
+================================================================================
+File: experiment4_trading_extended/multilayer/strategy_030.py
+Date: 2025-11-24 09:35:29
+
+
+[RED] CRITICAL Issues (1)
+--------------------------------------------------------------------------------
+
+1. Line 0: Syntax error: '(' was never closed (<unknown>, line 78)
+   Category: SYNTAX_ERROR
+   Fix: Fix syntax errors first
+
+================================================================================
+SUMMARY
+================================================================================
+Total Issues: 1
+[RED] CRITICAL: 1
+
+
+Batch report saved: experiment4_trading_extended/multilayer/batch_validation_report.json

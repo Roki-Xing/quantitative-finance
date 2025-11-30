@@ -1,0 +1,96 @@
+{
+  "experiment": "Experiment 11: Anomaly Analysis",
+  "date": "2025-11-25T20:16:49.350075",
+  "results": [
+    {
+      "success": true,
+      "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+      "strategy": "innovation",
+      "return_pct": 97.51057534981018,
+      "sharpe": 0.1651990740534435,
+      "max_drawdown": 15.339215206250376,
+      "total_trades": 10,
+      "win_rate": 40.0,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+      "strategy": "baseline",
+      "return_pct": 13.702275732315917,
+      "sharpe": -1.2639389600497237,
+      "max_drawdown": 6.829453315167704,
+      "total_trades": 161,
+      "win_rate": 39.75155279503105,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e91\u5357\u767d\u836f",
+      "strategy": "innovation",
+      "return_pct": 8.968162831322479,
+      "sharpe": -0.6610058543779623,
+      "max_drawdown": 12.78524616480423,
+      "total_trades": 22,
+      "win_rate": 50.0,
+      "params": {
+        "fast_ma_period": 15,
+        "medium_ma_period": 25,
+        "slow_ma_period": 40,
+        "rsi_period": 10,
+        "atr_period": 28,
+        "atr_multiple": 2.0,
+        "risk_factor": 0.03
+      }
+    },
+    {
+      "success": true,
+      "stock": "\u4e91\u5357\u767d\u836f",
+      "strategy": "baseline",
+      "return_pct": 2.9160358666292447,
+      "sharpe": -5.8102668093763405,
+      "max_drawdown": 2.174063877793647,
+      "total_trades": 164,
+      "win_rate": 39.87730061349693,
+      "params": {
+        "short_window": 30,
+        "long_window": 40,
+        "risk": 0.03,
+        "stop_loss": 0.03,
+        "take_profit": 0.08
+      }
+    }
+  ],
+  "characteristics": [
+    {
+      "stock": "\u4e1c\u65b9\u8d22\u5bcc",
+      "avg_volatility": 2.9579356622079453,
+      "avg_trend": 8.90885872937191,
+      "avg_atr_pct": 4.248450876145295,
+      "total_return": 3153.071133007678,
+      "periods": 3809
+    },
+    {
+      "stock": "\u4e91\u5357\u767d\u836f",
+      "avg_volatility": 1.7131827691489534,
+      "avg_trend": 2.3643189891793415,
+      "avg_atr_pct": 2.6032134745047713,
+      "total_return": 250.37438251865746,
+      "periods": 3858
+    }
+  ]
+}
