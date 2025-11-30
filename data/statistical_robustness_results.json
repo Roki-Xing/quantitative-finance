@@ -1,0 +1,46 @@
+{
+  "baseline_comparison": {},
+  "parameter_sensitivity": {},
+  "ablation_study": {},
+  "multiyear_validation": {
+    "Window1_2022": {
+      "n": 5,
+      "mean_return": 0.682,
+      "return_95_ci": [
+        0.142,
+        1.46
+      ],
+      "success_rate": 0.8,
+      "success_rate_95_ci": [
+        0.37553462976252533,
+        0.9637758913675698
+      ]
+    },
+    "Window2_2023": {
+      "n": 4,
+      "mean_return": -2.4949999999999997,
+      "return_95_ci": [
+        -4.645,
+        -0.345
+      ],
+      "success_rate": 0.0,
+      "success_rate_95_ci": [
+        0,
+        0.4898908364545973
+      ]
+    },
+    "Window3_2024": {
+      "n": 5,
+      "mean_return": -1.8619999999999997,
+      "return_95_ci": [
+        -5.588,
+        0.088
+      ],
+      "success_rate": 0.6,
+      "success_rate_95_ci": [
+        0.2307242812760128,
+        0.882379225767352
+      ]
+    }
+  }
+}

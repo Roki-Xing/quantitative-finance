@@ -1,0 +1,11 @@
+﻿asset,period,returns_pct,sharpe_ratio,max_drawdown_pct,total_trades,volatility
+600519_贵州茅台,training,41.98,0.497,8.18,14,low
+600519_贵州茅台,testing,-3.63,0.0,4.13,2,low
+000858_五粮液,training,11.58,0.175,9.28,13,medium
+000858_五粮液,testing,-0.74,0.0,1.9,2,medium
+600036_招商银行,training,-0.54,-3.881,1.1,17,low
+600036_招商银行,testing,-0.36,0.0,0.4,2,low
+000725_京东方,training,0.05,-22.46,0.17,17,high
+000725_京东方,testing,-0.08,0.0,0.08,1,high
+000002_万科A,training,-1.12,-4.565,1.52,17,high
+000002_万科A,testing,-0.21,0.0,0.22,2,high

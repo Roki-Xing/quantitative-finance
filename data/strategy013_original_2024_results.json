@@ -1,0 +1,102 @@
+[
+  {
+    "stock_code": "600519",
+    "stock_name": "贵州茅台",
+    "returns_pct": -5.9,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 6.35,
+    "total_trades": 8,
+    "final_value": 94095.06,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "000858",
+    "stock_name": "五粮液",
+    "returns_pct": -0.42,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 1.02,
+    "total_trades": 3,
+    "final_value": 99583.66,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "600036",
+    "stock_name": "招商银行",
+    "returns_pct": 0.17,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.09,
+    "total_trades": 0,
+    "final_value": 100168.97,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "601318",
+    "stock_name": "中国平安",
+    "returns_pct": 0.28,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.16,
+    "total_trades": 0,
+    "final_value": 100283.15,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "000651",
+    "stock_name": "格力电器",
+    "returns_pct": 0.16,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.2,
+    "total_trades": 0,
+    "final_value": 100159.26,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "000725",
+    "stock_name": "京东方",
+    "returns_pct": 0.01,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.02,
+    "total_trades": 0,
+    "final_value": 100013.49,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "000002",
+    "stock_name": "万科A",
+    "returns_pct": -0.05,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.07,
+    "total_trades": 0,
+    "final_value": 99952.61,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "600028",
+    "stock_name": "中国石化",
+    "returns_pct": 0.01,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.02,
+    "total_trades": 0,
+    "final_value": 100014.94,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "601857",
+    "stock_name": "中国石油",
+    "returns_pct": 0.01,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.05,
+    "total_trades": 0,
+    "final_value": 100005.17,
+    "initial_value": 100000.0
+  },
+  {
+    "stock_code": "300059",
+    "stock_name": "东方财富",
+    "returns_pct": 0.25,
+    "sharpe_ratio": 0.0,
+    "max_drawdown_pct": 0.1,
+    "total_trades": 0,
+    "final_value": 100249.26,
+    "initial_value": 100000.0
+  }
+]

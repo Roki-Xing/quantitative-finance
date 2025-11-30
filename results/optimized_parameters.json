@@ -1,0 +1,62 @@
+{
+  "贵州茅台": {
+    "stop_loss": 700,
+    "position_size": 30,
+    "train_return": 24.71390110409999,
+    "train_trades": 20
+  },
+  "五粮液": {
+    "stop_loss": 100,
+    "position_size": 30,
+    "train_return": 4.087647969000027,
+    "train_trades": 18
+  },
+  "招商银行": {
+    "stop_loss": 100,
+    "position_size": 30,
+    "train_return": 0.37092364439999803,
+    "train_trades": 20
+  },
+  "中国平安": {
+    "stop_loss": 200,
+    "position_size": 30,
+    "train_return": 0.31716888150003797,
+    "train_trades": 23
+  },
+  "格力电器": {
+    "stop_loss": 100,
+    "position_size": 30,
+    "train_return": 0.17185340669997096,
+    "train_trades": 21
+  },
+  "京东方": {
+    "stop_loss": 100,
+    "position_size": 30,
+    "train_return": 0.04642005540001264,
+    "train_trades": 19
+  },
+  "万科A": {
+    "stop_loss": 100,
+    "position_size": 5,
+    "train_return": -0.006332253949978622,
+    "train_trades": 23
+  },
+  "中国石化": {
+    "stop_loss": 100,
+    "position_size": 5,
+    "train_return": -0.00430098570001428,
+    "train_trades": 27
+  },
+  "中国石油": {
+    "stop_loss": 100,
+    "position_size": 5,
+    "train_return": -0.009165195100009441,
+    "train_trades": 22
+  },
+  "东方财富": {
+    "stop_loss": 100,
+    "position_size": 30,
+    "train_return": 0.3248109684000228,
+    "train_trades": 21
+  }
+}
