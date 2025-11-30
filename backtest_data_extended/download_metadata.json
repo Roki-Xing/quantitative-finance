@@ -1,0 +1,189 @@
+{
+  "stocks": [
+    {
+      "symbol": "000001",
+      "name": "平安银行",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600036",
+      "name": "招商银行",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "601318",
+      "name": "中国平安",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000858",
+      "name": "五粮液",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000651",
+      "name": "格力电器",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000725",
+      "name": "京东方A",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "002415",
+      "name": "海康威视",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "300059",
+      "name": "东方财富",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000538",
+      "name": "云南白药",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600276",
+      "name": "恒瑞医药",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "300760",
+      "name": "迈瑞医疗",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000333",
+      "name": "美的集团",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600887",
+      "name": "伊利股份",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "601012",
+      "name": "隆基绿能",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000002",
+      "name": "万科A",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600048",
+      "name": "保利发展",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "601857",
+      "name": "中国石油",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "600028",
+      "name": "中国石化",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "symbol": "000063",
+      "name": "中兴通讯",
+      "success": false,
+      "rows": 0,
+      "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    }
+  ],
+  "indices": [
+    {
+      "code": "sh000001",
+      "name": "上证指数",
+      "success": true,
+      "rows": 3858,
+      "error": null,
+      "start": "2010-01-04",
+      "end": "2025-11-21"
+    },
+    {
+      "code": "sz399001",
+      "name": "深证成指",
+      "success": true,
+      "rows": 3858,
+      "error": null,
+      "start": "2010-01-04",
+      "end": "2025-11-21"
+    },
+    {
+      "code": "sh000300",
+      "name": "沪深300",
+      "success": true,
+      "rows": 3858,
+      "error": null,
+      "start": "2010-01-04",
+      "end": "2025-11-21"
+    },
+    {
+      "code": "sz399006",
+      "name": "创业板指",
+      "success": true,
+      "rows": 3759,
+      "error": null,
+      "start": "2010-06-01",
+      "end": "2025-11-21"
+    }
+  ],
+  "summary": {
+    "download_time": "2025-11-22T22:46:56.212319",
+    "stocks_success": "0/20",
+    "indices_success": "4/4",
+    "total_data_points": 15333,
+    "data_directory": "/root/autodl-tmp/eoh/backtest_data_extended"
+  }
+}

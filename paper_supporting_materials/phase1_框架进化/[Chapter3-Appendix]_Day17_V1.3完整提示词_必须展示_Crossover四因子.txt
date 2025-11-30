@@ -1,0 +1,97 @@
+You are tasked with creating aggressive momentum trading strategies for {SYMBOL} using the V1.3-Crossover framework.
+
+CRITICAL REQUIREMENT - V1.3-Crossover Framework:
+You MUST implement ALL of the following features. Strategies without these features will fail.
+
+REQUIRED FEATURES (Non-negotiable):
+1. **crossover() signals for BOTH entry AND exit** - This is the KEY innovation
+   - NEVER use simple comparisons like "SMA_5 > SMA_10"
+   - ALWAYS use "crossover(SMA_5, SMA_10)" for precise timing
+   - Entry: Use crossover() to detect trend starts
+   - Exit: Use reverse crossover() for trend reversals
+
+2. **RSI with period=7** (NOT 14)
+   - self.rsi = self.I(RSI, self.data.Close, 7)
+   - This is more sensitive and works better in trending markets
+
+3. **Multiple SMA layers** (3-4 layers)
+   - Required: SMA_5, SMA_10, SMA_15
+   - Optional: SMA_20 for additional trend confirmation
+   - Use different SMA pairs for entry/exit
+
+4. **Stop-loss at position.pl < -200**
+   - This corresponds to ~2% account risk
+   - Inherited from successful V1.2-Multi framework
+
+5. **Entry conditions** (Choose one style):
+   - CONSERVATIVE: crossover(SMA_5, SMA_15) AND RSI > 40 AND SMA_5 > SMA_20
+   - AGGRESSIVE: crossover(SMA_5, SMA_10) AND RSI > 40 AND SMA_5 > SMA_15
+   - DUAL-ENTRY: Both of above as separate conditions (more trading opportunities)
+
+6. **Exit conditions** (MUST use crossover):
+   - Use reverse crossover: crossover(SMA_15, SMA_5) OR crossover(SMA_10, SMA_5)
+   - Don't rely only on stop-loss - have clear exit signals
+
+7. **Position sizing**:
+   - Standard (conservative): size=10
+   - Aggressive (higher risk/reward): size=20
+
+CODE TEMPLATE (you can modify but MUST keep crossover logic):
+
+```python
+from backtesting import Strategy
+from backtesting.lib import crossover
+from backtesting.test import SMA
+import talib
+
+def RSI(array, period):
+    return talib.RSI(array, timeperiod=period)
+
+class Strat(Strategy):
+    def init(self):
+        # Multi-layer SMA (REQUIRED)
+        self.sma_5 = self.I(SMA, self.data.Close, 5)
+        self.sma_10 = self.I(SMA, self.data.Close, 10)
+        self.sma_15 = self.I(SMA, self.data.Close, 15)
+        self.sma_20 = self.I(SMA, self.data.Close, 20)  # optional
+
+        # Sensitive RSI (REQUIRED: period=7)
+        self.rsi = self.I(RSI, self.data.Close, 7)
+
+    def next(self):
+        # Stop-loss (REQUIRED)
+        if self.position and self.position.pl < -200:
+            self.position.close()
+            return
+
+        # Entry: crossover + RSI + trend filter (REQUIRED: use crossover)
+        if (crossover(self.sma_5, self.sma_10_or_15) and  # CRITICAL: crossover()
+            self.rsi[-1] > 40 and
+            self.sma_5[-1] > self.sma_20_or_15[-1]):
+            if not self.position:
+                self.buy(size=10_or_20)
+
+        # Exit: reverse crossover (REQUIRED: use crossover)
+        elif crossover(self.sma_10_or_15, self.sma_5):  # CRITICAL: reverse crossover
+            if self.position:
+                self.position.close()
+```
+
+WHY CROSSOVER IS CRITICAL:
+- Static conditions (SMA_5 > SMA_10) trigger continuously = chase price higher
+- crossover(SMA_5, SMA_10) triggers ONCE at exact trend change = precise entry
+- Day 16 results: 94.4% positive rate using crossover vs 78.6% without
+- Best strategy (ID 12): +103.77% test return using crossover signals
+
+EXAMPLES OF GOOD STRATEGIES:
+1. Conservative: crossover(SMA_5, SMA_15) for entry, crossover(SMA_15, SMA_5) for exit
+2. Aggressive: crossover(SMA_5, SMA_10) for entry, dual conditions for exit
+3. Dual-entry: Multiple crossover conditions for different timeframes
+
+WHAT TO AVOID:
+- ❌ Simple comparisons without crossover: "if SMA_5 > SMA_10"
+- ❌ No exit signal: relying only on stop-loss
+- ❌ RSI(14): use RSI(7) instead
+- ❌ Only 2 SMA layers: use at least 3-4
+
+Generate an aggressive V1.3-Crossover strategy that will capture trending moves in {SYMBOL} during 2023. Focus on precise entry/exit timing using crossover signals.
