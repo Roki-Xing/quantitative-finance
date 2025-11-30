@@ -1,0 +1,219 @@
+{
+  "DAX_Germany": {
+    "priority": 1,
+    "commission": 0.002,
+    "data_points": 509,
+    "date_range": {
+      "start": "2023-01-02",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 14069.259765625,
+      "max": 20426.26953125
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": 3.771694320312497,
+      "sharpe_ratio": 0.42908566458044556,
+      "max_drawdown": -5.264192057984652,
+      "num_trades": 9,
+      "win_rate": 55.55555555555556,
+      "final_equity": 103771.6943203125
+    },
+    "improvement_pp": 3.771694320312497
+  },
+  "FTSE_UK": {
+    "priority": 1,
+    "commission": 0.002,
+    "data_points": 504,
+    "date_range": {
+      "start": "2023-01-03",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 7256.89990234375,
+      "max": 8445.7998046875
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": -17.126418149414064,
+      "sharpe_ratio": -1.7367068725628396,
+      "max_drawdown": -17.56702719481339,
+      "num_trades": 17,
+      "win_rate": 11.76470588235294,
+      "final_equity": 82873.58185058594
+    },
+    "improvement_pp": -17.126418149414064
+  },
+  "Nikkei_Japan": {
+    "priority": 2,
+    "commission": 0.003,
+    "data_points": 491,
+    "date_range": {
+      "start": "2023-01-04",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 25716.859375,
+      "max": 42224.01953125
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": 6.523159298828192,
+      "sharpe_ratio": 0.791326153100208,
+      "max_drawdown": -4.8452161979041595,
+      "num_trades": 8,
+      "win_rate": 50.0,
+      "final_equity": 106523.15929882819
+    },
+    "improvement_pp": 6.523159298828192
+  },
+  "Nifty50_India": {
+    "priority": 3,
+    "commission": 0.004,
+    "data_points": 490,
+    "date_range": {
+      "start": "2023-01-02",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 16945.05078125,
+      "max": 26216.05078125
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": 5.042770046874983,
+      "sharpe_ratio": 0.42732377382552666,
+      "max_drawdown": -10.109628904743799,
+      "num_trades": 10,
+      "win_rate": 50.0,
+      "final_equity": 105042.77004687498
+    },
+    "improvement_pp": 5.042770046874983
+  },
+  "Bovespa_Brazil": {
+    "priority": 3,
+    "commission": 0.003,
+    "data_points": 499,
+    "date_range": {
+      "start": "2023-01-02",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 97926.0,
+      "max": 137344.0
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "improvement_pp": 0.0
+  },
+  "Gold_GLD": {
+    "priority": 4,
+    "commission": 0.003,
+    "data_points": 501,
+    "date_range": {
+      "start": "2023-01-03",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 168.35000610351562,
+      "max": 257.5
+    },
+    "fixed": {
+      "total_return": 0.44722441802980034,
+      "sharpe_ratio": 0.46976126264605794,
+      "max_drawdown": -0.42862520050079733,
+      "num_trades": 6,
+      "win_rate": 50.0,
+      "final_equity": 100447.2244180298
+    },
+    "adaptive": {
+      "total_return": 6.981888537719759,
+      "sharpe_ratio": 0.46989293455746606,
+      "max_drawdown": -6.550298548069882,
+      "num_trades": 6,
+      "win_rate": 50.0,
+      "final_equity": 106981.88853771976
+    },
+    "improvement_pp": 6.534664119689959
+  },
+  "Bitcoin_BTC": {
+    "priority": 4,
+    "commission": 0.005,
+    "data_points": 730,
+    "date_range": {
+      "start": "2023-01-01",
+      "end": "2024-12-30"
+    },
+    "price_range": {
+      "min": 16625.080078125,
+      "max": 106140.6015625
+    },
+    "fixed": {
+      "total_return": 0.0,
+      "sharpe_ratio": 0,
+      "max_drawdown": 0.0,
+      "num_trades": 0,
+      "win_rate": 0,
+      "final_equity": 100000.0
+    },
+    "adaptive": {
+      "total_return": 11.92602625000001,
+      "sharpe_ratio": 0.7441805605389341,
+      "max_drawdown": -4.860763531712632,
+      "num_trades": 3,
+      "win_rate": 33.33333333333333,
+      "final_equity": 111926.02625000001
+    },
+    "improvement_pp": 11.92602625000001
+  },
+  "metadata": {
+    "experiment": "Cross-Market Validation (Real Data)",
+    "timestamp": "2025-11-29T20:01:39.945191",
+    "total_markets": 6,
+    "success_rate": 0.8333333333333334,
+    "average_improvement_pp": 2.381699412327368
+  }
+}

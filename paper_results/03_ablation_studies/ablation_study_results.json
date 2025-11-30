@@ -1,0 +1,555 @@
+{
+  "metadata": {
+    "experiment_name": "Ablation Study - Component Contribution Analysis",
+    "timestamp": "2025-11-29T20:52:55.269517",
+    "total_backtests": 40,
+    "strategies": [
+      "Baseline_Fixed",
+      "ATR_Only",
+      "Risk2Pct_Only",
+      "Full_Adaptive"
+    ],
+    "assets": [
+      "600519_贵州茅台",
+      "000858_五粮液",
+      "600036_招商银行",
+      "000725_京东方",
+      "000002_万科A"
+    ],
+    "periods": [
+      "training",
+      "testing"
+    ],
+    "initial_cash": 100000
+  },
+  "results": {
+    "Baseline_Fixed": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 11.02,
+          "final_value": 111024.88,
+          "sharpe_ratio": 0.529,
+          "max_drawdown_pct": 5.62,
+          "total_trades": 39,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -8.54,
+          "final_value": 91459.02,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 8.76,
+          "total_trades": 9,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": -0.87,
+          "final_value": 99131.38,
+          "sharpe_ratio": -0.242,
+          "max_drawdown_pct": 2.31,
+          "total_trades": 34,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -0.06,
+          "final_value": 99943.6,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.53,
+          "total_trades": 6,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "sector": "金融",
+        "training_period": {
+          "returns_pct": -0.02,
+          "final_value": 99975.5,
+          "sharpe_ratio": -0.067,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.03,
+          "final_value": 100030.94,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.12,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "sector": "科技",
+        "training_period": {
+          "returns_pct": -0.03,
+          "final_value": 99974.84,
+          "sharpe_ratio": -0.287,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.01,
+          "final_value": 100007.96,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.01,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "sector": "地产",
+        "training_period": {
+          "returns_pct": -0.19,
+          "final_value": 99806.85,
+          "sharpe_ratio": -0.343,
+          "max_drawdown_pct": 0.24,
+          "total_trades": 36,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.01,
+          "final_value": 100009.56,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.05,
+          "total_trades": 7,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      }
+    },
+    "ATR_Only": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 18.22,
+          "final_value": 118218.29,
+          "sharpe_ratio": 0.712,
+          "max_drawdown_pct": 7.85,
+          "total_trades": 40,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -10.9,
+          "final_value": 89097.43,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 11.46,
+          "total_trades": 8,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 1.28,
+          "final_value": 101277.24,
+          "sharpe_ratio": 0.363,
+          "max_drawdown_pct": 1.72,
+          "total_trades": 37,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -0.06,
+          "final_value": 99943.6,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.53,
+          "total_trades": 6,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "sector": "金融",
+        "training_period": {
+          "returns_pct": -0.02,
+          "final_value": 99975.5,
+          "sharpe_ratio": -0.067,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.03,
+          "final_value": 100030.94,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.12,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "sector": "科技",
+        "training_period": {
+          "returns_pct": -0.03,
+          "final_value": 99971.83,
+          "sharpe_ratio": -0.305,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 43,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.01,
+          "final_value": 100007.96,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.01,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "sector": "地产",
+        "training_period": {
+          "returns_pct": -0.19,
+          "final_value": 99806.85,
+          "sharpe_ratio": -0.343,
+          "max_drawdown_pct": 0.24,
+          "total_trades": 36,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.01,
+          "final_value": 100009.56,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.05,
+          "total_trades": 7,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      }
+    },
+    "Risk2Pct_Only": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 4.43,
+          "final_value": 104429.32,
+          "sharpe_ratio": 0.203,
+          "max_drawdown_pct": 9.69,
+          "total_trades": 12,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.0,
+          "final_value": 100000.0,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.0,
+          "total_trades": 0,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 8.29,
+          "final_value": 108286.5,
+          "sharpe_ratio": 0.54,
+          "max_drawdown_pct": 4.73,
+          "total_trades": 34,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -0.81,
+          "final_value": 99192.23,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 2.81,
+          "total_trades": 6,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "sector": "金融",
+        "training_period": {
+          "returns_pct": -0.12,
+          "final_value": 99877.5,
+          "sharpe_ratio": -0.066,
+          "max_drawdown_pct": 1.28,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -0.06,
+          "final_value": 99943.03,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.66,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "sector": "科技",
+        "training_period": {
+          "returns_pct": -0.13,
+          "final_value": 99874.22,
+          "sharpe_ratio": -0.287,
+          "max_drawdown_pct": 0.3,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100039.8,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "sector": "地产",
+        "training_period": {
+          "returns_pct": -0.68,
+          "final_value": 99322.24,
+          "sharpe_ratio": -0.28,
+          "max_drawdown_pct": 0.93,
+          "total_trades": 36,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.05,
+          "final_value": 100047.82,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 7,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      }
+    },
+    "Full_Adaptive": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 16.0,
+          "final_value": 116000.54,
+          "sharpe_ratio": 0.475,
+          "max_drawdown_pct": 9.59,
+          "total_trades": 40,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -9.27,
+          "final_value": 90725.81,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 9.8,
+          "total_trades": 8,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "sector": "消费",
+        "training_period": {
+          "returns_pct": 7.05,
+          "final_value": 107052.89,
+          "sharpe_ratio": 0.42,
+          "max_drawdown_pct": 6.59,
+          "total_trades": 37,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": -0.28,
+          "final_value": 99717.99,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 2.59,
+          "total_trades": 6,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "sector": "金融",
+        "training_period": {
+          "returns_pct": -0.12,
+          "final_value": 99877.5,
+          "sharpe_ratio": -0.066,
+          "max_drawdown_pct": 1.28,
+          "total_trades": 42,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.15,
+          "final_value": 100154.7,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.61,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "sector": "科技",
+        "training_period": {
+          "returns_pct": -0.14,
+          "final_value": 99859.13,
+          "sharpe_ratio": -0.305,
+          "max_drawdown_pct": 0.32,
+          "total_trades": 43,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100039.8,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "sector": "地产",
+        "training_period": {
+          "returns_pct": -0.97,
+          "final_value": 99034.25,
+          "sharpe_ratio": -0.341,
+          "max_drawdown_pct": 1.22,
+          "total_trades": 36,
+          "initial_cash": 100000,
+          "data_points": 1457,
+          "start_date": "2018-01-01",
+          "end_date": "2023-12-31"
+        },
+        "testing_period": {
+          "returns_pct": 0.05,
+          "final_value": 100047.82,
+          "sharpe_ratio": 0.0,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 7,
+          "initial_cash": 100000,
+          "data_points": 242,
+          "start_date": "2024-01-01",
+          "end_date": "2024-12-31"
+        }
+      }
+    }
+  }
+}

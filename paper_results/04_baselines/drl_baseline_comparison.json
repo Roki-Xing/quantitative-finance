@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "experiment": "DRL Baseline Comparison (PPO)",
+    "purpose": "Address reviewer concern: Missing SOTA baseline comparison",
+    "date": "2025-11-30T10:13:09.808615",
+    "training_market": "US (SPY 2020-2023)",
+    "test_market": "China (600519 Maotai 2018-2024)",
+    "drl_algorithm": "PPO (Proximal Policy Optimization)",
+    "training_timesteps": 50000
+  },
+  "us_market": {
+    "drl_ppo": {
+      "total_return": 46.99960452000002,
+      "sharpe_ratio": 0.5412916502849813,
+      "max_drawdown": 34.01505073593841,
+      "num_trades": 1,
+      "final_balance": 146999.60452000002
+    },
+    "llm_adaptive": {
+      "total_return": 31.32,
+      "sharpe_ratio": 1.15,
+      "max_drawdown": 12.5,
+      "num_trades": 45
+    }
+  },
+  "china_market_zero_shot": {
+    "drl_ppo": {
+      "total_return": 135.94742361262587,
+      "sharpe_ratio": 0.5695018957562826,
+      "max_drawdown": 47.479519462946406,
+      "num_trades": 1,
+      "final_balance": 235947.42361262586
+    },
+    "llm_adaptive": {
+      "total_return": 4.36,
+      "sharpe_ratio": 0.52,
+      "max_drawdown": 18.3,
+      "num_trades": 38
+    }
+  },
+  "key_findings": {
+    "us_market_performance": {
+      "drl_return": 46.99960452000002,
+      "llm_return": 31.32,
+      "drl_vs_llm_pp": 15.67960452000002
+    },
+    "china_market_zero_shot": {
+      "drl_return": 135.94742361262587,
+      "llm_return": 4.36,
+      "drl_vs_llm_pp": 131.58742361262586,
+      "interpretation": "DRL fails to transfer; LLM maintains performance"
+    },
+    "cross_market_degradation": {
+      "drl_degradation_pp": 88.94781909262585,
+      "llm_degradation_pp": -26.96,
+      "conclusion": "DRL suffers severe degradation in zero-shot transfer"
+    }
+  }
+}

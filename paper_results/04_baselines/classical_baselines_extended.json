@@ -1,0 +1,679 @@
+{
+  "metadata": {
+    "experiment_name": "Classical Baselines Extended",
+    "timestamp": "2025-11-29T20:56:29.682866",
+    "total_backtests": 80,
+    "strategies": [
+      "Momentum",
+      "MeanReversion",
+      "Bollinger",
+      "MACD"
+    ],
+    "assets": [
+      "600519_贵州茅台",
+      "000858_五粮液",
+      "600036_招商银行",
+      "000725_京东方",
+      "000002_万科A",
+      "601318_中国平安",
+      "000651_格力电器",
+      "600028_中国石化",
+      "601857_中国石油",
+      "300059_东方财富"
+    ],
+    "periods": [
+      "training",
+      "testing"
+    ]
+  },
+  "results": {
+    "Momentum": {
+      "600519_贵州茅台": {
+        "training": {
+          "returns_pct": 61.93,
+          "final_value": 161934.73,
+          "sharpe_ratio": 0.382,
+          "max_drawdown_pct": 35.24,
+          "total_trades": 20
+        },
+        "testing": {
+          "returns_pct": -16.57,
+          "final_value": 83431.85,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 18.6,
+          "total_trades": 4
+        }
+      },
+      "000858_五粮液": {
+        "training": {
+          "returns_pct": 77.87,
+          "final_value": 177865.37,
+          "sharpe_ratio": 0.417,
+          "max_drawdown_pct": 35.51,
+          "total_trades": 23
+        },
+        "testing": {
+          "returns_pct": -24.27,
+          "final_value": 75733.99,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 34.01,
+          "total_trades": 5
+        }
+      },
+      "600036_招商银行": {
+        "training": {
+          "returns_pct": -14.47,
+          "final_value": 85526.15,
+          "sharpe_ratio": -0.173,
+          "max_drawdown_pct": 41.03,
+          "total_trades": 21
+        },
+        "testing": {
+          "returns_pct": 3.41,
+          "final_value": 103407.99,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 13.06,
+          "total_trades": 4
+        }
+      },
+      "000725_京东方": {
+        "training": {
+          "returns_pct": -41.33,
+          "final_value": 58671.67,
+          "sharpe_ratio": -0.609,
+          "max_drawdown_pct": 48.9,
+          "total_trades": 22
+        },
+        "testing": {
+          "returns_pct": -8.74,
+          "final_value": 91256.7,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 22.71,
+          "total_trades": 3
+        }
+      },
+      "000002_万科A": {
+        "training": {
+          "returns_pct": -63.97,
+          "final_value": 36031.53,
+          "sharpe_ratio": -0.88,
+          "max_drawdown_pct": 64.79,
+          "total_trades": 24
+        },
+        "testing": {
+          "returns_pct": 6.95,
+          "final_value": 106948.56,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 20.51,
+          "total_trades": 5
+        }
+      },
+      "601318_中国平安": {
+        "training": {
+          "returns_pct": -44.48,
+          "final_value": 55519.58,
+          "sharpe_ratio": -0.427,
+          "max_drawdown_pct": 47.6,
+          "total_trades": 21
+        },
+        "testing": {
+          "returns_pct": 23.39,
+          "final_value": 123392.27,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 12.69,
+          "total_trades": 3
+        }
+      },
+      "000651_格力电器": {
+        "training": {
+          "returns_pct": -18.68,
+          "final_value": 81319.07,
+          "sharpe_ratio": -0.052,
+          "max_drawdown_pct": 43.21,
+          "total_trades": 22
+        },
+        "testing": {
+          "returns_pct": 17.19,
+          "final_value": 117192.05,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 15.42,
+          "total_trades": 3
+        }
+      },
+      "600028_中国石化": {
+        "training": {
+          "returns_pct": -15.65,
+          "final_value": 84353.12,
+          "sharpe_ratio": -0.176,
+          "max_drawdown_pct": 46.35,
+          "total_trades": 15
+        },
+        "testing": {
+          "returns_pct": -6.86,
+          "final_value": 93138.01,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 22.47,
+          "total_trades": 3
+        }
+      },
+      "601857_中国石油": {
+        "training": {
+          "returns_pct": -17.46,
+          "final_value": 82542.6,
+          "sharpe_ratio": -0.155,
+          "max_drawdown_pct": 41.17,
+          "total_trades": 18
+        },
+        "testing": {
+          "returns_pct": -15.57,
+          "final_value": 84427.41,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 39.21,
+          "total_trades": 4
+        }
+      },
+      "300059_东方财富": {
+        "training": {
+          "returns_pct": 91.03,
+          "final_value": 191026.68,
+          "sharpe_ratio": 0.663,
+          "max_drawdown_pct": 41.58,
+          "total_trades": 23
+        },
+        "testing": {
+          "returns_pct": 111.79,
+          "final_value": 211793.86,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 19.81,
+          "total_trades": 4
+        }
+      }
+    },
+    "MeanReversion": {
+      "600519_贵州茅台": {
+        "training": {
+          "returns_pct": 18.06,
+          "final_value": 118061.02,
+          "sharpe_ratio": 0.197,
+          "max_drawdown_pct": 40.39,
+          "total_trades": 21
+        },
+        "testing": {
+          "returns_pct": 1.73,
+          "final_value": 101733.73,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 9.27,
+          "total_trades": 4
+        }
+      },
+      "000858_五粮液": {
+        "training": {
+          "returns_pct": 32.07,
+          "final_value": 132067.5,
+          "sharpe_ratio": 0.316,
+          "max_drawdown_pct": 36.82,
+          "total_trades": 26
+        },
+        "testing": {
+          "returns_pct": 1.54,
+          "final_value": 101539.21,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 19.72,
+          "total_trades": 4
+        }
+      },
+      "600036_招商银行": {
+        "training": {
+          "returns_pct": 1.78,
+          "final_value": 101783.05,
+          "sharpe_ratio": -0.013,
+          "max_drawdown_pct": 27.55,
+          "total_trades": 24
+        },
+        "testing": {
+          "returns_pct": 13.26,
+          "final_value": 113258.37,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 1.39,
+          "total_trades": 2
+        }
+      },
+      "000725_京东方": {
+        "training": {
+          "returns_pct": -17.53,
+          "final_value": 82473.54,
+          "sharpe_ratio": -0.109,
+          "max_drawdown_pct": 44.19,
+          "total_trades": 26
+        },
+        "testing": {
+          "returns_pct": 10.97,
+          "final_value": 110968.75,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 5.99,
+          "total_trades": 5
+        }
+      },
+      "000002_万科A": {
+        "training": {
+          "returns_pct": 56.94,
+          "final_value": 156941.71,
+          "sharpe_ratio": 0.567,
+          "max_drawdown_pct": 23.11,
+          "total_trades": 27
+        },
+        "testing": {
+          "returns_pct": -21.31,
+          "final_value": 78691.05,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 21.31,
+          "total_trades": 3
+        }
+      },
+      "601318_中国平安": {
+        "training": {
+          "returns_pct": -18.12,
+          "final_value": 81879.36,
+          "sharpe_ratio": -0.331,
+          "max_drawdown_pct": 41.57,
+          "total_trades": 24
+        },
+        "testing": {
+          "returns_pct": 2.78,
+          "final_value": 102777.7,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 9.6,
+          "total_trades": 3
+        }
+      },
+      "000651_格力电器": {
+        "training": {
+          "returns_pct": 27.1,
+          "final_value": 127096.74,
+          "sharpe_ratio": 0.405,
+          "max_drawdown_pct": 26.23,
+          "total_trades": 28
+        },
+        "testing": {
+          "returns_pct": 2.96,
+          "final_value": 102964.85,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 7.51,
+          "total_trades": 3
+        }
+      },
+      "600028_中国石化": {
+        "training": {
+          "returns_pct": 18.12,
+          "final_value": 118115.16,
+          "sharpe_ratio": 0.475,
+          "max_drawdown_pct": 16.38,
+          "total_trades": 27
+        },
+        "testing": {
+          "returns_pct": 6.39,
+          "final_value": 106391.31,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.99,
+          "total_trades": 2
+        }
+      },
+      "601857_中国石油": {
+        "training": {
+          "returns_pct": -33.59,
+          "final_value": 66408.08,
+          "sharpe_ratio": -0.59,
+          "max_drawdown_pct": 49.88,
+          "total_trades": 23
+        },
+        "testing": {
+          "returns_pct": 1.14,
+          "final_value": 101137.4,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 11.34,
+          "total_trades": 3
+        }
+      },
+      "300059_东方财富": {
+        "training": {
+          "returns_pct": -37.65,
+          "final_value": 62354.18,
+          "sharpe_ratio": -0.357,
+          "max_drawdown_pct": 52.17,
+          "total_trades": 17
+        },
+        "testing": {
+          "returns_pct": -9.44,
+          "final_value": 90563.67,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 20.19,
+          "total_trades": 3
+        }
+      }
+    },
+    "Bollinger": {
+      "600519_贵州茅台": {
+        "training": {
+          "returns_pct": 63.14,
+          "final_value": 163144.1,
+          "sharpe_ratio": 0.521,
+          "max_drawdown_pct": 39.71,
+          "total_trades": 12
+        },
+        "testing": {
+          "returns_pct": 9.37,
+          "final_value": 109373.53,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 17.11,
+          "total_trades": 2
+        }
+      },
+      "000858_五粮液": {
+        "training": {
+          "returns_pct": 63.28,
+          "final_value": 163280.42,
+          "sharpe_ratio": 0.425,
+          "max_drawdown_pct": 34.59,
+          "total_trades": 17
+        },
+        "testing": {
+          "returns_pct": 17.55,
+          "final_value": 117553.11,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 22.56,
+          "total_trades": 3
+        }
+      },
+      "600036_招商银行": {
+        "training": {
+          "returns_pct": 37.69,
+          "final_value": 137689.08,
+          "sharpe_ratio": 0.447,
+          "max_drawdown_pct": 31.1,
+          "total_trades": 17
+        },
+        "testing": {
+          "returns_pct": 17.02,
+          "final_value": 117017.82,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 1.51,
+          "total_trades": 2
+        }
+      },
+      "000725_京东方": {
+        "training": {
+          "returns_pct": 22.57,
+          "final_value": 122573.18,
+          "sharpe_ratio": 0.223,
+          "max_drawdown_pct": 41.82,
+          "total_trades": 14
+        },
+        "testing": {
+          "returns_pct": 17.59,
+          "final_value": 117592.21,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 7.8,
+          "total_trades": 2
+        }
+      },
+      "000002_万科A": {
+        "training": {
+          "returns_pct": 23.56,
+          "final_value": 123558.57,
+          "sharpe_ratio": 0.231,
+          "max_drawdown_pct": 38.09,
+          "total_trades": 16
+        },
+        "testing": {
+          "returns_pct": -17.23,
+          "final_value": 82765.43,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 20.93,
+          "total_trades": 2
+        }
+      },
+      "601318_中国平安": {
+        "training": {
+          "returns_pct": -36.48,
+          "final_value": 63522.26,
+          "sharpe_ratio": -0.505,
+          "max_drawdown_pct": 49.29,
+          "total_trades": 14
+        },
+        "testing": {
+          "returns_pct": 11.96,
+          "final_value": 111960.05,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 9.6,
+          "total_trades": 2
+        }
+      },
+      "000651_格力电器": {
+        "training": {
+          "returns_pct": -12.51,
+          "final_value": 87486.86,
+          "sharpe_ratio": -0.156,
+          "max_drawdown_pct": 38.93,
+          "total_trades": 15
+        },
+        "testing": {
+          "returns_pct": 1.24,
+          "final_value": 101239.71,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 8.77,
+          "total_trades": 2
+        }
+      },
+      "600028_中国石化": {
+        "training": {
+          "returns_pct": 62.01,
+          "final_value": 162009.07,
+          "sharpe_ratio": 1.34,
+          "max_drawdown_pct": 21.14,
+          "total_trades": 19
+        },
+        "testing": {
+          "returns_pct": 9.95,
+          "final_value": 109951.16,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.99,
+          "total_trades": 2
+        }
+      },
+      "601857_中国石油": {
+        "training": {
+          "returns_pct": -30.46,
+          "final_value": 69537.15,
+          "sharpe_ratio": -0.529,
+          "max_drawdown_pct": 44.43,
+          "total_trades": 14
+        },
+        "testing": {
+          "returns_pct": 23.5,
+          "final_value": 123496.54,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 11.34,
+          "total_trades": 3
+        }
+      },
+      "300059_东方财富": {
+        "training": {
+          "returns_pct": 19.2,
+          "final_value": 119200.39,
+          "sharpe_ratio": 0.207,
+          "max_drawdown_pct": 50.64,
+          "total_trades": 15
+        },
+        "testing": {
+          "returns_pct": 4.54,
+          "final_value": 104538.05,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 20.19,
+          "total_trades": 3
+        }
+      }
+    },
+    "MACD": {
+      "600519_贵州茅台": {
+        "training": {
+          "returns_pct": 30.89,
+          "final_value": 130885.91,
+          "sharpe_ratio": 0.352,
+          "max_drawdown_pct": 26.61,
+          "total_trades": 58
+        },
+        "testing": {
+          "returns_pct": -12.51,
+          "final_value": 87492.52,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 19.92,
+          "total_trades": 6
+        }
+      },
+      "000858_五粮液": {
+        "training": {
+          "returns_pct": 64.97,
+          "final_value": 164972.76,
+          "sharpe_ratio": 0.387,
+          "max_drawdown_pct": 41.47,
+          "total_trades": 46
+        },
+        "testing": {
+          "returns_pct": -5.67,
+          "final_value": 94326.15,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 21.22,
+          "total_trades": 10
+        }
+      },
+      "600036_招商银行": {
+        "training": {
+          "returns_pct": 6.87,
+          "final_value": 106873.43,
+          "sharpe_ratio": 0.087,
+          "max_drawdown_pct": 23.43,
+          "total_trades": 53
+        },
+        "testing": {
+          "returns_pct": 31.69,
+          "final_value": 131694.5,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 7.88,
+          "total_trades": 5
+        }
+      },
+      "000725_京东方": {
+        "training": {
+          "returns_pct": 22.98,
+          "final_value": 122980.88,
+          "sharpe_ratio": 0.221,
+          "max_drawdown_pct": 38.63,
+          "total_trades": 53
+        },
+        "testing": {
+          "returns_pct": -10.13,
+          "final_value": 89868.83,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 18.82,
+          "total_trades": 9
+        }
+      },
+      "000002_万科A": {
+        "training": {
+          "returns_pct": -48.49,
+          "final_value": 51514.92,
+          "sharpe_ratio": -0.204,
+          "max_drawdown_pct": 59.85,
+          "total_trades": 58
+        },
+        "testing": {
+          "returns_pct": 30.73,
+          "final_value": 130728.06,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 20.11,
+          "total_trades": 6
+        }
+      },
+      "601318_中国平安": {
+        "training": {
+          "returns_pct": -31.59,
+          "final_value": 68406.24,
+          "sharpe_ratio": -0.236,
+          "max_drawdown_pct": 51.28,
+          "total_trades": 56
+        },
+        "testing": {
+          "returns_pct": 29.67,
+          "final_value": 129670.29,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 10.73,
+          "total_trades": 6
+        }
+      },
+      "000651_格力电器": {
+        "training": {
+          "returns_pct": -37.92,
+          "final_value": 62080.79,
+          "sharpe_ratio": -0.229,
+          "max_drawdown_pct": 40.27,
+          "total_trades": 56
+        },
+        "testing": {
+          "returns_pct": 16.67,
+          "final_value": 116666.65,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 10.5,
+          "total_trades": 6
+        }
+      },
+      "600028_中国石化": {
+        "training": {
+          "returns_pct": 22.67,
+          "final_value": 122674.1,
+          "sharpe_ratio": 0.241,
+          "max_drawdown_pct": 30.39,
+          "total_trades": 49
+        },
+        "testing": {
+          "returns_pct": -0.4,
+          "final_value": 99595.83,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 12.66,
+          "total_trades": 6
+        }
+      },
+      "601857_中国石油": {
+        "training": {
+          "returns_pct": 82.6,
+          "final_value": 182595.42,
+          "sharpe_ratio": 0.527,
+          "max_drawdown_pct": 31.28,
+          "total_trades": 45
+        },
+        "testing": {
+          "returns_pct": 10.69,
+          "final_value": 110690.24,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 12.02,
+          "total_trades": 6
+        }
+      },
+      "300059_东方财富": {
+        "training": {
+          "returns_pct": 205.81,
+          "final_value": 305812.28,
+          "sharpe_ratio": 0.699,
+          "max_drawdown_pct": 50.03,
+          "total_trades": 46
+        },
+        "testing": {
+          "returns_pct": 78.44,
+          "final_value": 178443.84,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 19.6,
+          "total_trades": 6
+        }
+      }
+    }
+  }
+}

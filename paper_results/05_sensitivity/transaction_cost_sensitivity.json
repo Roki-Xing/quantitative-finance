@@ -1,0 +1,490 @@
+{
+  "metadata": {
+    "experiment_name": "Transaction Cost Sensitivity Analysis",
+    "timestamp": "2025-11-29T20:55:46.738100",
+    "total_backtests": 40,
+    "commission_rates": [
+      0.001,
+      0.0015,
+      0.002,
+      0.003
+    ],
+    "assets": [
+      "600519_贵州茅台",
+      "000858_五粮液",
+      "600036_招商银行",
+      "000725_京东方",
+      "000002_万科A"
+    ]
+  },
+  "results": {
+    "Commission_0.10%": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": 17.61,
+          "final_value": 117607.67,
+          "sharpe_ratio": 0.338,
+          "max_drawdown_pct": 9.37,
+          "total_trades": 40,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -9.0,
+          "final_value": 90999.32,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 9.53,
+          "total_trades": 8,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "training_period": {
+          "returns_pct": 7.53,
+          "final_value": 107528.57,
+          "sharpe_ratio": 0.091,
+          "max_drawdown_pct": 6.52,
+          "total_trades": 37,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -0.2,
+          "final_value": 99796.54,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.54,
+          "total_trades": 6,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": 0.0,
+          "final_value": 100002.61,
+          "sharpe_ratio": -3.306,
+          "max_drawdown_pct": 1.24,
+          "total_trades": 42,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.17,
+          "final_value": 100172.94,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.6,
+          "total_trades": 5,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.12,
+          "final_value": 99876.23,
+          "sharpe_ratio": -13.303,
+          "max_drawdown_pct": 0.31,
+          "total_trades": 43,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100042.01,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.89,
+          "final_value": 99105.55,
+          "sharpe_ratio": -2.445,
+          "max_drawdown_pct": 1.16,
+          "total_trades": 36,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.05,
+          "final_value": 100053.55,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 7,
+          "commission_rate": 0.001,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      }
+    },
+    "Commission_0.15%": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": 16.0,
+          "final_value": 116000.54,
+          "sharpe_ratio": 0.296,
+          "max_drawdown_pct": 9.59,
+          "total_trades": 40,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -9.27,
+          "final_value": 90725.81,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 9.8,
+          "total_trades": 8,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "training_period": {
+          "returns_pct": 7.05,
+          "final_value": 107052.89,
+          "sharpe_ratio": 0.064,
+          "max_drawdown_pct": 6.59,
+          "total_trades": 37,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -0.28,
+          "final_value": 99717.99,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.59,
+          "total_trades": 6,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": -0.12,
+          "final_value": 99877.5,
+          "sharpe_ratio": -3.382,
+          "max_drawdown_pct": 1.28,
+          "total_trades": 42,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.15,
+          "final_value": 100154.7,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.61,
+          "total_trades": 5,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.14,
+          "final_value": 99859.13,
+          "sharpe_ratio": -13.304,
+          "max_drawdown_pct": 0.32,
+          "total_trades": 43,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100039.8,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.97,
+          "final_value": 99034.25,
+          "sharpe_ratio": -2.463,
+          "max_drawdown_pct": 1.22,
+          "total_trades": 36,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.05,
+          "final_value": 100047.82,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 7,
+          "commission_rate": 0.0015,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      }
+    },
+    "Commission_0.20%": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": 14.36,
+          "final_value": 114361.9,
+          "sharpe_ratio": 0.254,
+          "max_drawdown_pct": 9.88,
+          "total_trades": 40,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -9.55,
+          "final_value": 90452.29,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 10.08,
+          "total_trades": 8,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "training_period": {
+          "returns_pct": 6.56,
+          "final_value": 106560.62,
+          "sharpe_ratio": 0.037,
+          "max_drawdown_pct": 6.67,
+          "total_trades": 37,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -0.36,
+          "final_value": 99639.44,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.64,
+          "total_trades": 6,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": -0.25,
+          "final_value": 99752.38,
+          "sharpe_ratio": -3.457,
+          "max_drawdown_pct": 1.32,
+          "total_trades": 42,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.14,
+          "final_value": 100136.46,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.62,
+          "total_trades": 5,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.16,
+          "final_value": 99842.03,
+          "sharpe_ratio": -13.303,
+          "max_drawdown_pct": 0.33,
+          "total_trades": 43,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100037.6,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -1.04,
+          "final_value": 98962.96,
+          "sharpe_ratio": -2.482,
+          "max_drawdown_pct": 1.28,
+          "total_trades": 36,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.04,
+          "final_value": 100042.09,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.26,
+          "total_trades": 7,
+          "commission_rate": 0.002,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      }
+    },
+    "Commission_0.30%": {
+      "600519_贵州茅台": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": 12.19,
+          "final_value": 112188.89,
+          "sharpe_ratio": 0.194,
+          "max_drawdown_pct": 10.24,
+          "total_trades": 40,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -10.09,
+          "final_value": 89905.26,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 10.62,
+          "total_trades": 8,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000858_五粮液": {
+        "volatility": "medium",
+        "training_period": {
+          "returns_pct": 5.64,
+          "final_value": 105635.95,
+          "sharpe_ratio": -0.015,
+          "max_drawdown_pct": 6.82,
+          "total_trades": 37,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": -0.52,
+          "final_value": 99482.34,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 2.74,
+          "total_trades": 6,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "600036_招商银行": {
+        "volatility": "low",
+        "training_period": {
+          "returns_pct": -0.5,
+          "final_value": 99502.16,
+          "sharpe_ratio": -3.604,
+          "max_drawdown_pct": 1.41,
+          "total_trades": 42,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.1,
+          "final_value": 100099.98,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.63,
+          "total_trades": 5,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000725_京东方": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -0.19,
+          "final_value": 99807.82,
+          "sharpe_ratio": -13.297,
+          "max_drawdown_pct": 0.35,
+          "total_trades": 43,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.03,
+          "final_value": 100033.19,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.06,
+          "total_trades": 5,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      },
+      "000002_万科A": {
+        "volatility": "high",
+        "training_period": {
+          "returns_pct": -1.18,
+          "final_value": 98820.36,
+          "sharpe_ratio": -2.517,
+          "max_drawdown_pct": 1.4,
+          "total_trades": 36,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 1457
+        },
+        "testing_period": {
+          "returns_pct": 0.03,
+          "final_value": 100030.64,
+          "sharpe_ratio": 0,
+          "max_drawdown_pct": 0.27,
+          "total_trades": 7,
+          "commission_rate": 0.003,
+          "initial_cash": 100000,
+          "data_points": 242
+        }
+      }
+    }
+  }
+}
